@@ -20,8 +20,8 @@ import styled from 'styled-components';
 
 function Handsome() {
   return (
-    <DIV className="container_image_slider ssm:-mt-10">
-      <h1 className="heading">Events Gallery</h1>
+    <DIV className="container_image_slider  ssm:-mt-10">
+      <h1 className="heading mt-10">Events Gallery</h1>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -51,25 +51,25 @@ function Handsome() {
         className="swiper_container"
       >
         <SwiperSlide>
-          <img src={slide_image_1} alt="slide_image" />
+          <img src={slide_image_1} alt="INFINIA EVENT1" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image_2} alt="slide_image" />
+          <img src={slide_image_2} alt="INFINIA EVENT2" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image_3} alt="slide_image" />
+          <img src={slide_image_3} alt="INFINIA EVENT3" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image_4} alt="slide_image" />
+          <img src={slide_image_4} alt="INFINIA EVENT4" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image_5} alt="slide_image" />
+          <img src={slide_image_5} alt="INFINIA EVENT5" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image_6} alt="slide_image" />
+          <img src={slide_image_6} alt="INFINIA EVENT6" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image_7} alt="slide_image" />
+          <img src={slide_image_7} alt="INFINIA EVENT7" />
         </SwiperSlide>
 
          <div className="slider-controler">

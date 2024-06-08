@@ -40,23 +40,23 @@ const SubProduct = ({ products }) => {
                                 <>
                                     {point1 && <SwiperSlide>
                                         <div className="flex justify-center lg:h-[100%] items-center ">
-                                            <img className="ssm:mt-10" src={image.type} alt="" />
+                                            <img className="ssm:mt-10" src={image.type} alt="Boards & Panels" />
                                         </div>
                                     </SwiperSlide>}
                                     {point2 && <SwiperSlide>
                                         <div className="flex justify-center lg:h-[100%] items-center ">
-                                            <img className="ssm:mt-10" src={image1.type} alt="" />
+                                            <img className="ssm:mt-10" src={image1.type} alt="EM02 RRP Doors" />
                                         </div>
                                     </SwiperSlide>}
                                     {point3 && <SwiperSlide>
                                         <div className="flex justify-center lg:h-[100%] items-center ">
-                                            <img className="ssm:mt-10" src={image2.type} alt="" />
+                                            <img className="ssm:mt-10" src={image2.type} alt="EM03 RRP Door Frames" />
                                         </div>
                                     </SwiperSlide>}
                                 </>
                             ) : (<SwiperSlide>
                                 <div className="flex justify-center lg:h-[100%] items-center ">
-                                    <img className="ssm:mt-10" src={image.type} alt="" />
+                                    <img className="ssm:mt-10" src={image.type} alt="EM04 RRP Window Profiles" />
                                 </div>
                             </SwiperSlide>)
                         }

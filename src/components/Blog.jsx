@@ -120,7 +120,7 @@ const Blog = () => {
           <img
             className="rounded-md image_main"
             src={item.image}
-            alt={item.user}
+            alt={item.category}
           />
           <div className="w-full p-2 items">
             <span className="text-blue-600 mt-10">{item.category}</span>
@@ -129,7 +129,7 @@ const Blog = () => {
               <img
                 className="inline-block h-6 w-6 rounded-full bg-cover"
                 src={item.avatare}
-                alt=""
+                alt={item.description}
               />
               <label className="opacity-70">{item.user}</label>
               <label className="opacity-70">{item.date}</label>

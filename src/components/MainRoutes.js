@@ -17,8 +17,6 @@ import Woodmagix from "../pages/Woodmagix";
 import Blog from "./Blog";
 import NotFound from "../pages/NotFound";
 import Login from "./Login";
-import FormData from "./FormData";
-import PrivateRoutes from "./PrivateRoutes";
 import { AnimatePresence } from "framer-motion";
 import Image_Event from "./Image_Event";
 
@@ -51,8 +49,7 @@ const MainRoutes = () => {
       <Route path="/events" element={<Image_Event />} />
       <Route path="/privacy" element={<Privacy_Policy />} />
 
-      <Route path="/formData" element={<PrivateRoutes><FormData /></PrivateRoutes>} />
-      
+     
       <Route path="/*" element={<NotFound />} />
     </Routes>
  </AnimatePresence>

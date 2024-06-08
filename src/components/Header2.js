@@ -196,7 +196,7 @@ const Header2 = () => {
         <div id="#nav" className="flex justify-between items-center ">
           {/* logo */}
           <a href="/">
-            <img className={`${bg ? "h-12" : "h-12"}`} src={Logo} alt="" />
+            <img className={`${bg ? "h-12" : "h-12"}`} src={Logo} alt="INFINIA" />
           </a>
           <div
             onClick={() => setMobileMenuOpen(true)}
@@ -696,7 +696,7 @@ const Header2 = () => {
                   <img
                     className={` ${bg ? "h-20" : "h-20 mt-2"} `}
                     src={Logo}
-                    alt=""
+                    alt="INFINIA"
                   />
                   {/* <h1 className="title mt-2 text-4xl">Infinia</h1> */}
                 </a>

@@ -40,7 +40,7 @@ const handleSubmit = () => {
             <img
               className="mx-auto h-[130px] w-auto"
               src={Logo}
-              alt="Your Company"
+              alt="INFINIA"
             />
             <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
               Sign in to your account

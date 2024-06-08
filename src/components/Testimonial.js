@@ -45,7 +45,7 @@ transition={{
 }}
 
 className='order-1 rounded-lg'>
-  <img className='rounded-lg img' src={image.type} alt='' ></img>
+  <img className='rounded-lg img' src={image.type} alt={title} ></img>
 </motion.div>
       </div>
     </div>

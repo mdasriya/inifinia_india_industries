@@ -49,8 +49,8 @@ const BrandCarousel = () => {
       <Slider {...settings} className="py-6">
         <div>
           <img
-            src="image1"
-            alt="Brand 1"
+            src="https://i.postimg.cc/qMV7fGHM/1.png"
+            alt="Flame retardant"
             className="w-32 h-32 rounded-full object-cover"
           />
         </div>
@@ -64,21 +64,21 @@ const BrandCarousel = () => {
         <div>
           <img
             src="https://i.postimg.cc/CKPKWTSW-/3.png"
-            alt="Brand 2"
+            alt="chemical resistant"
             className="w-32 h-32 rounded-full object-cover"
           />
         </div>
         <div>
           <img
             src="https://i.postimg.cc/cHPLLRKh/4.png"
-            alt="Brand 2"
+            alt="Termite resistant"
             className="w-32 h-32 rounded-full object-cover"
           />
         </div>
         <div>
           <img
             src="https://i.postimg.cc/nr7cjXBJ/5.png"
-            alt="Brand 2"
+            alt="Energy Efficient"
             className="w-32 h-32 rounded-full object-cover"
           />
         </div>

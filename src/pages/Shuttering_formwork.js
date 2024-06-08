@@ -29,9 +29,9 @@ function Shuttering_formwork() {
         <div className="bg-white bg-pro">
           <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 RRP Shuttering Grade
-              </h2>
+              </h1>
               <p className="mt-4 text-gray-500">
                 Recycle Regenerated Plastic(RRP Products) for centering
                 purpose. Waterproof , Termiteproof and long lasting
@@ -40,8 +40,8 @@ function Shuttering_formwork() {
 
               <div className="mt-3 flex gap-4">
                 <a
-                  href="https://pdf.indiamart.com/impdf/22443121988/101519832/wpc-door-frame.pdf"
-                  download
+                  href=""
+               
                   target="_blank"
                   className="flex items-center gap-2 subtitle  hover:cursor-pointer"
                 >

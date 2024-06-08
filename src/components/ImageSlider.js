@@ -30,23 +30,23 @@ const ImageSlider = () => {
 
         <SwiperSlide>
           <div className="slider">
-            <img className="w-full lg:h-full lg:-mt-5 object-cover brightness-75" src={images2} alt="" />
+            <img className="w-full lg:h-full lg:-mt-5 object-cover brightness-75" src={images2} alt="INFINIA slider1" />
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className="slider">
-            <img className="w-full  lg:h-full object-cover brightness-75" src={images3} alt="" />
+            <img className="w-full  lg:h-full object-cover brightness-75" src={images3} alt="INFINIA slider2" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider">
-            <img className="w-full lg:-mt-5 lg:h-full object-cover brightness-75" src={images4} alt="" />
+            <img className="w-full lg:-mt-5 lg:h-full object-cover brightness-75" src={images4} alt="INFINIA slider3" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider">
-            <img className="w-full lg:h-full object-cover brightness-75" src={images5} alt="" />
+            <img className="w-full lg:h-full object-cover brightness-75" src={images5} alt="INFINIA slider4" />
           </div>
         </SwiperSlide>
       </Swiper>

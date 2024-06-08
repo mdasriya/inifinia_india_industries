@@ -32,22 +32,22 @@ const Image_Event = () => {
 
   </div>
     <div className="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>img:not(:first-child)]:mt-8">
-        <img src={image9} className='cover-fit'/>
-        <img src={image2}/>
-        <img src={image3}/>
-        <img src={image4}/>
-        <img src={image5}/>
-        <img src={image6}/>
-        <img src={image7}/>
-        <img src={image8}/>
-        <img src={image1}/>
-        <img src={image10}/>
-        <img src={image11}/>
-        <img src={image12}/>
-        <img src={image13}/>
-        <img src={image14}/>
-        <img src={image15}/>
-        <img src={image16}/>
+        <img src={image9} alt='INFINIA EVENTS' className='cover-fit'/>
+        <img src={image2} alt='INFINIA EVENTS'/>
+        <img src={image3} alt='INFINIA EVENTS'/>
+        <img src={image4} alt='INFINIA EVENTS'/>
+        <img src={image5} alt='INFINIA EVENTS'/>
+        <img src={image6} alt='INFINIA EVENTS'/>
+        <img src={image7} alt='INFINIA EVENTS'/>
+        <img src={image8} alt='INFINIA EVENTS'/>
+        <img src={image1} alt='INFINIA EVENTS'/>
+        <img src={image10} alt='INFINIA EVENTS'/>
+        <img src={image11} alt='INFINIA EVENTS'/>
+        <img src={image12} alt='INFINIA EVENTS'/>
+        <img src={image13} alt='INFINIA EVENTS'/>
+        <img src={image14} alt='INFINIA EVENTS'/>
+        <img src={image15} alt='INFINIA EVENTS'/>
+        <img src={image16} alt='INFINIA EVENTS'/>
     </div>
 </div>
 

@@ -76,7 +76,7 @@ const navigate = useNavigate()
         transition={{duration:1}}
           
           >
-            <img src={image.type} alt="" className="img"/>
+            <img src={image.type} alt={title} className="img"/>
             <div className="absolute top-[80%] left-[40%] ">
             <button onClick={()=> navigate("/contact")} className='bg-[rgba(255,255,255,0.9)] hover:bg-[rgba(255,255,255,0.5)]   text-lg rounded-md backdrop-blur-md transition lg:px-[35px] lg:py-[9px]'>Join</button>
 

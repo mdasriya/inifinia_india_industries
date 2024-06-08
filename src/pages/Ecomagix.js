@@ -40,7 +40,7 @@ return (
       {location.pathname !== "/ecomagix" && (
         <div className="bg-white con-bg">
           <div className='flex items-center w-auto text-center door'>
-            <h3 className="text-5xl font-extrabold tracking-normal text-center z-1 text-white "></h3>
+            <h3 className="text-5xl font-extrabold tracking-normal text-center z-1 text-white ">Ecomagix  </h3>
           </div>
         </div>
       )}

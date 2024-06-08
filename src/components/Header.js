@@ -196,7 +196,7 @@ const Header = () => {
     bg ? "h-12" : "h-12" 
   }`}
   src={Logo}
-  alt=""
+  alt="INFINIA"
 />
            
           </a>
@@ -640,7 +640,7 @@ const Header = () => {
     bg ? "h-20" : "h-20 mt-2" 
   } `}
   src={Logo}
-  alt=""
+  alt="INFINIA LOGO"
 />
                   {/* <h1 className="title mt-2 text-4xl">Infinia</h1> */}
                 </a>

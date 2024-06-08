@@ -20,7 +20,7 @@ const Products = () => {
   return <section className='section text-center'>
   <div className='mv:-mt-[30px] ssm:-mt-4'>
 
-<img src={upper}  />
+<img src={upper}  alt={title}/>
   </div>
 
     <div className='container mx-auto'>

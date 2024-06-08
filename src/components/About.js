@@ -61,7 +61,7 @@ function About() {
                 >
                   <img
                     src={img}
-                    alt="Image"
+                    alt="about infinia"
                     className="left  w-[100%]  ssm:w-[100%] ssm:p-2 sv:w-[100%] lg:h-[100%] ssm:h-[300px]"
                   />
                 </motion.div>
@@ -142,7 +142,7 @@ function About() {
                         <img
                           className="w-[full]"
                           src={image1}
-                          alt=""
+                          alt="Wood Polymer Composite (WPC)"
                         />
                       </div>
                     <div className="p-1">
@@ -172,7 +172,7 @@ function About() {
                       }}
                     >
                       <div className=" h-[280px] ">
-                        <img className="w-full" src={image2} alt="" />
+                        <img className="w-full" src={image2} alt="Recycle Regenerated Plastic(RRP)" />
                       </div>
                      <div className="p-1">
                      <h2>Recycle Regenerated Plastic(RRP)</h2>
@@ -202,7 +202,7 @@ function About() {
                         <img
                           className="w-full object-cover"
                           src={image3}
-                          alt=""
+                          alt="Terracotta Clay Products"
                         />
                       </div>
                      <div className="p-1">
@@ -245,7 +245,7 @@ function About() {
                         className="image"
                         width={"50%"}
                         src={climet}
-                        alt=""
+                        alt="Climate Responsive"
                       />
                     </div>
                     <div className="subdown">
@@ -275,7 +275,7 @@ function About() {
                     className="down"
                   >
                     <div>
-                      <img className="image" src={sus} alt="" />
+                      <img className="image" src={sus} alt="Extended Usable Life" />
                     </div>
                     <div className="subdown">
                       <h2>Extended Usable Life:</h2>
@@ -304,7 +304,7 @@ function About() {
                     className="down"
                   >
                     <div>
-                      <img className="image" src={super_q} alt="" />
+                      <img className="image" src={super_q} alt="Superior Quality" />
                     </div>
                     <div className="subdown">
                       <h2>Superior Quality:</h2>
@@ -333,7 +333,7 @@ function About() {
                     className="down"
                   >
                     <div>
-                      <img className="image" src={cost_effective} alt="" />
+                      <img className="image" src={cost_effective} alt="Cost-Effective Solutions" />
                     </div>
                     <div className="subdown">
                       <h2>Cost-Effective Solutions:</h2>
@@ -362,7 +362,7 @@ function About() {
                     className="down"
                   >
                     <div>
-                      <img className="image" src={sus} alt="" />
+                      <img className="image" src={sus} alt="Sustainability Champions" />
                     </div>
                     <div className="subdown">
                       <h2>Sustainability Champions:</h2>

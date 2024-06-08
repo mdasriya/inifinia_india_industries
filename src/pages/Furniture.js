@@ -32,9 +32,9 @@ function Furniture() {
  <div className="bg-white bg-pro">
       <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Recycle Plastic Sheet For Furniture
-          </h2>
+          </h1>
           <p className="mt-4 text-gray-500">
           Recycle plastic sheet for Indoor outdoor  furniture for school colleges desk Benches.
 More Durable and waterproof .
@@ -90,7 +90,8 @@ Sheets available in many Thicknesses.
             src="https://5.imimg.com/data5/SELLER/Default/2022/9/FL/IH/QM/101519832/recycle-plastic-sheet-furniture-500x500.jpeg"
             alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
             className="rounded-lg bg-gray-100 shadow img"
-          />
+      
+        />
        
         </div>
       </div>
