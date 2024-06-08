@@ -29,7 +29,7 @@ const App = () => {
         </Helmet>
 
         <Header2 />
-        {/* <Home1 /> */}
+      
         
         {/* Suspense should wrap only the components that are lazy-loaded */}
         <Suspense fallback={<div>Loading...</div>}>

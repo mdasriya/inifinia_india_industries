@@ -34,7 +34,7 @@
   justify-content: center;
   align-items: center;
   height: 400px; 
-  background-image: url("./assets/img/1500 x 400px.jpg");
+  /* background-image: url("./assets/img/1500 x 400px.jpg"); */
   background-position: center;
   background-size: cover;
  border:"10px solid red"

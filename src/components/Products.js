@@ -1,5 +1,5 @@
 import React from 'react';
-import upper from "../assets/img/1500 x 400px.jpg"
+import upper from "../assets/img/1500-x-400px.webp"
 // import data
 import { motion } from "framer-motion";
 import { products } from "../data"
