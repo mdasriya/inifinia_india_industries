@@ -21,7 +21,8 @@ import styled from 'styled-components';
 function Handsome() {
   return (
     <DIV className="container_image_slider  ssm:-mt-10">
-      <h1 className="heading mt-10">Events Gallery</h1>
+      <h1 className="heading mt-10 ssm:mt-10">Events Gallery</h1>
+
       <Swiper
         effect={'coverflow'}
         grabCursor={true}

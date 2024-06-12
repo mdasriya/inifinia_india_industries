@@ -1,60 +1,65 @@
-import React from 'react';
-import upper from "../assets/img/1500-x-400px.webp"
+import React from "react";
+import upper from "../assets/img/1500-x-400px.webp";
 // import data
 import { motion } from "framer-motion";
-import { products } from "../data"
-
+import { products } from "../data";
 
 // import product slider components
 
-import ProductSlider from "../components/ProductSlider"
-
-
+import ProductSlider from "../components/ProductSlider";
 
 const Products = () => {
-
   // destructure products
-   
-  const {title, subtitle} =  products;
 
-  return <section className='section text-center'>
-  <div className='mv:-mt-[30px] ssm:-mt-4'>
+  const { title, subtitle } = products;
 
-<img src={upper}  alt={title}/>
-  </div>
-
-    <div className='container mx-auto'>
-    
-      <div>
-        <motion.h2 className='title' whileInView={{
-                  x: 0,
-                  opacity: 1,
-                }}
-                initial={{
-                  x: "100px",
-                  opacity: 0.3,
-                }}
-                transition={{
-                  duration: 1,
-                }}>{title}</motion.h2>
-        <motion.p className='max-w-[750px] mx-auto mb-[50px] lg:mb-[70px]' whileInView={{
-                  x: 0,
-                  opacity: 1,
-                }}
-                initial={{
-                  x: "100px",
-                  opacity: 0,
-                }}
-                transition={{
-                  duration: 1,
-                  delay: 1,
-                }}>{subtitle}</motion.p>
+  return (
+    <section className="section text-center">
+      <div className="lg:-mt-[10px] ssm:mt-4">
+        <img src={upper} alt={title} />
       </div>
-{/* sliders */}
-<ProductSlider  data-aos="fade-right" />
 
-    </div>
-  </section>;
+      <div className="container  mx-auto">
+        <div>
+          <motion.h2
+            className="title mt-6"
+            whileInView={{
+              x: 0,
+              opacity: 1,
+            }}
+            initial={{
+              x: "100px",
+              opacity: 0.3,
+            }}
+            transition={{
+              duration: 1,
+            }}
+          >
+            {title}
+          </motion.h2>
+          <motion.p
+            className="max-w-[750px] mx-auto mb-[50px] lg:mb-[70px] text-center"
+            whileInView={{
+              x: 0,
+              opacity: 1,
+            }}
+            initial={{
+              x: "100px",
+              opacity: 0,
+            }}
+            transition={{
+              duration: 1,
+              delay: 1,
+            }}
+          >
+            {subtitle}
+          </motion.p>
+        </div>
+        {/* sliders */}
+        <ProductSlider data-aos="fade-right" />
+      </div>
+    </section>
+  );
 };
 
 export default Products;
