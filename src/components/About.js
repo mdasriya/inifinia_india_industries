@@ -209,7 +209,7 @@ function About() {
                      <h2>Terracotta Clay Products</h2>
                       <p>
                         Rooted in tradition and crafted with modern precision,
-                        our Terra Cotta products add a touch of timeless
+                        our Terracotta products add a touch of timeless
                         elegance to architectural and landscaping projects.
                       </p>
                      </div>
