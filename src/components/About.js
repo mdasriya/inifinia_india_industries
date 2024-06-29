@@ -93,8 +93,7 @@ function About() {
                       Premier Manufacturer of Innovative Building Solutions! At
                       Infinia Industries, we take pride in being the forefront
                       of innovation, carving a niche as the leading manufacturer
-                      of Wood Polymer Composite,Recycle  Regenerated Plastic(Rpp Products), and Terra
-                      Cotta clay products in Central India.
+                      of Wood Polymer Composite,Recycle Regenerated Plastic(RRP Products), and Terracotta clay Products in Central India.
                     </p>
                   </div>
                 </motion.div>
