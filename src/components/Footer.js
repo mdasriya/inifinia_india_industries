@@ -97,8 +97,8 @@ const Footer = () => {
 
 
             <li>
-              <a className="fromleft text-gray-700 transition hover:text-gray-700/75" href="/ecomagix">
-                Brands
+              <a className="fromleft text-gray-700 transition hover:text-gray-700/75" href="/blogs">
+              Blogs
               </a>
             </li>
 
