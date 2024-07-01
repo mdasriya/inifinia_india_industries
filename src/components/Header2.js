@@ -116,7 +116,7 @@ const brands = [
   },
   {
     name: "Skyace",
-    href: "#",
+    href: "/skyace",
     icon: CursorArrowRaysIcon,
   },
   // {
@@ -357,7 +357,7 @@ const Header2 = () => {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="/woodmagix"
+                            href="/skyace"
                             className={classNames(
                               active
                                 ? "bg-gray-100 text-gray-900"
