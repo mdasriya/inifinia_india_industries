@@ -57,7 +57,7 @@ export const navigation = [
 export const hero = {
   title: 'Welcome to  Infinia Industries Private Limited',
   subtitle:
-    "Infinia Industries Pvt Ltd  Central India's Premier Manufacturer of Innovative Building Solutions!we take pride in being the forefront of innovation, carving a niche as the leading manufacturer of Wood Polymer Composite Regenerated Plastic  and Terra Cotta products in Central India",
+    "Infinia Industries Pvt Ltd  Central India's Premier Manufacturer of Innovative Building Solutions!we take pride in being the forefront of innovation, carving a niche as the leading manufacturer of Wood Polymer Composite Regenerated Plastic  and Terracotta products in Central India",
   buttonText: 'Shop Now',
 };
 
