@@ -15,7 +15,7 @@ const features = [
 ];
 
 const handleDownload = () => {
-  window.open(`${process.env.PUBLIC_URL}/Fly Ash Bricks Pallets.pdf`, "_blank");
+  window.open(`${process.env.PUBLIC_URL}/SKYACE.pdf`, "_blank");
 };
 
 function Skyace() {
