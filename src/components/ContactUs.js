@@ -40,18 +40,19 @@ const [loading, setLoading] =useState(false)
   };
 
   const handleSubmit = (e) => {
-let url  = ""
+    setLoading(true)
+    e.preventDefault();
+let url  = "https://sheet.best/api/sheets/26ad79bd-785b-4f4b-bd5a-9ef851575885"
 
  axios.post(url, formData)
  .then((res)=> {
-  console.log(res.data)
+  handleToast()
+  setLoading(false)
  })
  .catch((err)=>{
   console.log(err.message)
+  setLoading(false)
  })
-
-
-    e.preventDefault();
     setFormData({
       firstName: '',
       lastName: '',
@@ -61,32 +62,10 @@ let url  = ""
       message: '',
     });
   };
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwHOopoO6FLeo3jphOX1GWaz1uPSrBvCKAJ53WsVQBmQFeypEi06jFYIxLfN3k1JWUJgg/exec'
-  const form = document.forms['submit-to-google-sheet']
+ 
 
-  const handleSubmit2 = async () => {
-    setLoading(true)
-    try {
-      const response = await fetch(scriptURL, { method: 'POST', body: new FormData(form) });
-      console.log('Success!', response);
-      handleToast();
-      setLoading(false)
-    } catch (error) {
-      console.error('Error!', error.message);
-      setLoading(false)
-    }
-  };
+ 
 
-//   form.addEventListener('submit', e => {
-//     e.preventDefault()
-//     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-//       .then(response => console.log('Success!', response))
-//       .catch(error => console.error('Error!', error.message))
-//  
-
-// }
-// )
-console.log("formData", formData)
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8 con-bg">
       <div
@@ -179,22 +158,19 @@ console.log("formData", formData)
                 <select
                   id="country"
                   name="country"
-                  className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                  className="h-full border-0 rounded-md  bg-transparent bg-none py-0 pl-4 pr-5 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                 >
                   <option>IN</option>
                  
                 </select>
-                {/* <ChevronDownIcon
-                  className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                  aria-hidden="true"
-                /> */}
+               
               </div>
               <input
                 type="tel"
                 name="phoneNumber" value={formData.phoneNumber} onChange={handleChange}
                 id="phone-number"
                 autoComplete="tel"
-                className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0  py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -243,7 +219,7 @@ console.log("formData", formData)
           </Switch.Group>
         </div>
         <div className="mt-10">
-          <button onClick={handleSubmit2}
+          <button 
             type="submit"
             className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
