@@ -7,7 +7,7 @@ import Transition from '../components/Transition';
 
 const features = [
   { name: "Minimum Order Quantity", description: "250 feet" },
-  { name: "Country of Origin", description: "Ivory" },
+  { name: "Country of Origin", description: "Ivory"},
   { name: "Usage/Application", description: "wood plastic compit" },
   { name: "Color", description: "Rectangular" },
   { name: "Coverage", description: "premium" },

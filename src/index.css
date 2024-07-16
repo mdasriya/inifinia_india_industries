@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Poppins:wght@600&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 @layer base {
   body {
     @apply bg-grey-3 font-primary text-base leading-relaxed;
@@ -34,15 +37,19 @@
   justify-content: center;
   align-items: center;
   height: 400px; 
-  /* background-image: url("./assets/img/1500 x 400px.jpg"); */
+  background-image: url("./assets/img/1500 x 400px.jpg");
   background-position: center;
   background-size: cover;
- border:"10px solid red"
+ border:"10px solid red";
 
 }
 
 .clay {
   background-image: url('./assets/img/Tile-Roofing.jpg');
+display:
+}
+.skyace {
+  background-image: url('./assets/img/luxury-thai-massage-pavilion.jpg');
 }
 
 .wood {
@@ -54,8 +61,8 @@
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
-.skyace {
-  background-image: url('./assets/img/luxury-thai-massage-pavilion.jpg');
+.con-bg{
+  /* background-image: url('./assets/img/contact.jpg'); */
 }
 
 .shadow-2 {
@@ -104,8 +111,8 @@
 
 .title {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #2b305f;
+  color: #212121;
+  font-size:18px;
 }
 
 .text {

@@ -3,6 +3,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import MainRoutes from "./components/MainRoutes";
 import Footer from "./components/Footer";
 import Header2 from "./components/Header2";
+import Home1 from './components/Home1';
 // import Home1 from './components/Home1';
 
 // Lazy load the OtherComponent
@@ -28,8 +29,8 @@ const App = () => {
           </script>
         </Helmet>
 
-        <Header2 />
-      
+        {/* <Header2 /> */}
+      <Home1 />
         
         {/* Suspense should wrap only the components that are lazy-loaded */}
         <Suspense fallback={<div>Loading...</div>}>

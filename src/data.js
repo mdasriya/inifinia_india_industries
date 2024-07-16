@@ -117,38 +117,47 @@ export const newInStore = {
     {
       name: 'WPC',
       image: <Slider_1 />,
+      href:"/woodmagix"
     },
     {
       name: 'UPR',
       image: <BedImg />,
+      href:"/woodmagix"
     },
     {
       name: 'SPF',
       image: <CupboardImg />,
+      href:"/woodmagix"
     },
     {
       name: 'RRP',
       image: <LightingImg />,
+      href:"/ecomagix"
     },
     {
       name: 'Terracotta',
       image: <ChairImg />,
+      href:"/claymagix"
     },
     {
       name: 'WPC',
       image: <BedImg />,
+      href:"/ecomagix"
     },
     {
       name: 'SPF',
       image: <CupboardImg />,
+      href:"/woodmagix"
     },
     {
       name: 'RRP',
       image: <LightingImg />,
+      href:"/ecomagix"
     },
     {
       name: 'Terracotta',
       image: <ChairImg />,
+      href:"/claymagix"
     },
   ],
 };
@@ -392,6 +401,30 @@ export const testimonial = {
       name: 'Ankit Meshram',
       occupation: 'Nagpur, Maharashtra',
       date: '13-June-23',
+      message:
+        '“Thank you,sir give a best solution for me and pleaser to talked to you”',
+    },
+    {
+      avatar: <Avatar1Img />,
+      name: 'Ankita Kadam',
+      occupation: 'Nagpur, Maharashtra',
+      date: '20-May-23',
+      message:
+        '“Thank you,sir give a best solution for me and pleaser to talked to you”',
+    },
+    {
+      avatar: <Avatar2Img />,
+      name: 'Shital Janbandhu',
+      occupation: 'Nagpur, Maharashtra',
+      date: '25-June-23',
+      message:
+        '“Thank you,sir give a best solution for me and pleaser to talked to you”',
+    },
+    {
+      avatar: <Avatar3Img />,
+      name: 'Ramesh Gayakwad',
+      occupation: 'Nagpur, Maharashtra',
+      date: '11-July-23',
       message:
         '“Thank you,sir give a best solution for me and pleaser to talked to you”',
     },

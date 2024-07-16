@@ -1,5 +1,5 @@
 import React from "react";
-import upper from "../assets/img/1500-x-400px.webp";
+import upper from "../assets/img/1500 x 400px.jpg";
 // import data
 import { motion } from "framer-motion";
 import { products } from "../data";
@@ -15,7 +15,7 @@ const Products = () => {
 
   return (
     <section className="section text-center">
-      <div className="lg:-mt-[10px] ssm:mt-4">
+      <div className="mt-[-62px] ">
         <img src={upper} alt={title} />
       </div>
 

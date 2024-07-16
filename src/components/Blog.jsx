@@ -56,7 +56,6 @@ let BlogsData = [
 const Blog = () => {
   const blogsPerPage = 9; // Number of blogs to display per page
   const [currentPage, setCurrentPage] = useState(1);
-
   const totalBlogs = BlogsData.length;
   const totalPages = Math.ceil(totalBlogs / blogsPerPage);
 
@@ -103,6 +102,7 @@ const Blog = () => {
       setCurrentPage((prevPage) => prevPage - 1);
     }
   };
+ 
   return (
     <DIV className="grid grid-template-rows: repeat(4, minmax(0, 1fr)) w-full m-auto">
     <motion.div
@@ -125,6 +125,7 @@ const Blog = () => {
           <div className="w-full p-2 items">
             <span className="text-blue-600 mt-10">{item.category}</span>
             <h4>{item.description}...</h4>
+            <p></p>
             <div className="flex -space-x-1 overflow-hidden mt-2 justify-between">
               <img
                 className="inline-block h-6 w-6 rounded-full bg-cover"

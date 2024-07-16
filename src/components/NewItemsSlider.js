@@ -12,6 +12,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 
 const NewItemsSlider = () => {
@@ -33,7 +34,7 @@ const NewItemsSlider = () => {
    grabCursor={true} breakpoints={{
     320:{
       slidesPerView: 2,
-      spaceBetween: 18,
+      spaceBetween: 5,
     },
     768:{
       slidesPerView: 3,
@@ -45,12 +46,14 @@ const NewItemsSlider = () => {
 return <SwiperSlide className='max-w-[256px]' key={index}
 
 >
-  <div className='relative p-2 lg:h-[600px] ssm:h-[350px]'>
+<Link to={product.href}>
+  <DIV className='relative p-2 lg:h-[600px] ssm:h-[350px]'>
     <img src={product.image.type} className='lg:h-[100%] ssm:h-[100%] brightness-75 img rounded-md'  alt={product.name}/>
     <div className='absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize'>{product.name}</div>
+    
    
-  </div>
-
+  </DIV>
+  </Link>
 </SwiperSlide>
 
     })}
@@ -119,6 +122,6 @@ top: 50%;
  margin-left: -10px;
 
  height: 40px;
- width: 40px;
+ width: 40px;
 }
 `

@@ -15,7 +15,32 @@ import image2 from '../assets/img/RRP 355 x 280px.jpg'
 import image3 from '../assets/img/Terracotta 355 x 280px.jpg'
 
 
-
+const articles = [
+  {
+    id: 1,
+    title: 'Wood Polymer Composite (WPC)',
+    description: 'Infinia Industries excels in the production of Wood Polymer Composite, a revolutionary material that combines the natural aesthetics of wood with the durability of polymer.',
+    image: image1,
+    alt: 'Wood Polymer Composite (WPC)',
+    delay: 0.5,
+  },
+  {
+    id: 2,
+    title: 'Recycle Regenerated Plastic (RRP)',
+    description: 'Contributing to the global effort to combat plastic waste, our Recycle Regenerated Plastic (RRP) products are manufactured with a focus on environmental sustainability.',
+    image: image2,
+    alt: 'Recycle Regenerated Plastic (RRP)',
+    delay: 0.8,
+  },
+  {
+    id: 3,
+    title: 'Terracotta Clay Products',
+    description: 'Rooted in tradition and crafted with modern precision, our Terracotta products add a touch of timeless elegance to architectural and landscaping projects.',
+    image: image3,
+    alt: 'Terracotta Clay Products',
+    delay: 1.3,
+  },
+];
 function About() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -121,100 +146,26 @@ function About() {
                 </motion.h3>
 
                 <div className="text-base font-norma">
-                  <div className="article">
-                    <motion.article
-                      className="relative  border-4 border-red-600"
-                      whileInView={{
-                        y: 0,
-                        opacity: 1,
-                      }}
-                      initial={{
-                        y: "100px",
-                        opacity: 0,
-                      }}
-                      transition={{
-                        duration: 1,
-                        delay: 0.5,
-                      }}
-                    >
-                      <div className="h-[280px]">
-                        <img
-                          className="w-[full]"
-                          src={image1}
-                          alt="Wood Polymer Composite (WPC)"
-                        />
-                      </div>
-                    <div className="p-1">
-                    <h2>Wood Polymer Composite (WPC)</h2>
-                      <p>
-                        Infinia Industries excels in the production of Wood
-                        Polymer Composite, a revolutionary material that
-                        combines the natural aesthetics of wood with the
-                        durability of polymer.
-                      </p>
-                    </div>
-                     
-                    </motion.article>
-
-                    <motion.article
-                      whileInView={{
-                        y: 0,
-                        opacity: 1,
-                      }}
-                      initial={{
-                        y: "100px",
-                        opacity: 0,
-                      }}
-                      transition={{
-                        duration: 1,
-                        delay: 0.8,
-                      }}
-                    >
-                      <div className=" h-[280px] ">
-                        <img className="w-full" src={image2} alt="Recycle Regenerated Plastic(RRP)" />
-                      </div>
-                     <div className="p-1">
-                     <h2>Recycle Regenerated Plastic(RRP)</h2>
-                      <p>
-                        Contributing to the global effort to combat plastic
-                        waste, our Recycle Regenerated Plastic(RRP) products are manufactured
-                        with a focus on environmental sustainability.
-                      </p>
-                     </div>
-                    </motion.article>
-
-                    <motion.article
-                      whileInView={{
-                        y: 0,
-                        opacity: 1,
-                      }}
-                      initial={{
-                        y: "100px",
-                        opacity: 0,
-                      }}
-                      transition={{
-                        duration: 1,
-                        delay: 1.3,
-                      }}
-                    >
-                      <div className=" h-[280px]">
-                        <img
-                          className="w-full object-cover"
-                          src={image3}
-                          alt="Terracotta Clay Products"
-                        />
-                      </div>
-                     <div className="p-1">
-                     <h2>Terracotta Clay Products</h2>
-                      <p>
-                        Rooted in tradition and crafted with modern precision,
-                        our Terracotta products add a touch of timeless
-                        elegance to architectural and landscaping projects.
-                      </p>
-                     </div>
-                    </motion.article>
-                  </div>
-                </div>
+      <div className="article">
+        {articles.map((article) => (
+          <motion.article
+            key={article.id}
+            className="relative border-4 border-red-600"
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: '100px', opacity: 0 }}
+            transition={{ duration: 1, delay: article.delay }}
+          >
+            <div className="h-[280px]">
+              <img className="w-full" src={article.image} alt={article.alt} />
+            </div>
+            <div className="p-1">
+              <h2>{article.title}</h2>
+              <p>{article.description}</p>
+            </div>
+          </motion.article>
+        ))}
+      </div>
+    </div>
                 <h3
                   className="text-xl font-bold mx-2 text-gray-700 mb-2"
                   style={{ textAlign: "center" }}
