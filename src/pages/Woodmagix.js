@@ -5,12 +5,16 @@ import image4 from '../assets/img/9.jpg';
 import Transition from "../components/Transition";
 
 
+
+
 const features = [
   {
     name: "1. WM01 Boards / Panels",
     description1: "1.1 WM01A Plain Regular Boards Variants - Colours, Sizes",
     description2: "1.2 WM01B 3Layer Boards Variants - Colours, Sizes",
     description3: "1.3 WM01C 3D Panels  Variants - Colours, Sizes, Designs",
+    href:"/Boards_panels",
+    
   },
   {
     name: "2. WM02 Doors",
@@ -68,6 +72,9 @@ const features = [
     description3:"6.1.2 WM06A-D02 Textured Planks Variants - Colours, Sizes(lengths)",
   },
 ];
+
+
+
 
 function Woodmagix() {
   return (

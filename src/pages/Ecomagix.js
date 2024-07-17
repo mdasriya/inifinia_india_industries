@@ -8,7 +8,7 @@ import Transition from '../components/Transition';
 import Products from '../components/Products';
 import { useLocation } from 'react-router-dom';
 const features = [
-  { name: '1. EM01 Boards & Panels', description1: '1.1 EM01A RRP Panels -regular Variants - Sizes', description2: '1.2 EM01B RRP Panels UHD Varient -Size,colours'},
+  { name: '1. EM01 Boards & Panels', description1: '1.1 EM01A RRP Panels -regular Variants - Sizes', description2: '1.2 EM01B RRP Panels UHD Varient -Size,colours',href:'/DoorFrams'},
   { name: '2. EM02 RRP Doors', description1: '2.1 EM02A Panel Doors', description2:'2.2 EM02B Flush Doors'  },
   { name: '3. EM03 RRP Door Frames', description1: '3.1 EM03A 3x2', description2:'3.2 EM03B 4x2', description3:'3.3 EM03C 4x2.5',
   description4:'3.4 EM03D 5x2.5',

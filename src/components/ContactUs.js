@@ -61,7 +61,11 @@ let url  = "https://sheet.best/api/sheets/26ad79bd-785b-4f4b-bd5a-9ef851575885"
       message: '',
     });
   };
- 
+  const [partnerInterest, setPartnerInterest] = useState(null);
+
+  const handlePartnerInterestChange = (event) => {
+    setPartnerInterest(event.target.value);
+  };
 
  
 
@@ -287,32 +291,109 @@ let url  = "https://sheet.best/api/sheets/26ad79bd-785b-4f4b-bd5a-9ef851575885"
         <p class="text-sm text-gray-300 mt-4 leading-relaxed">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project and provide help.</p>
 
         <form>
-          <div class="space-y-4 mt-8">
-            <input type="text" placeholder="Full Name"
-              class="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none" />
-            <input type="text" placeholder="Street"
-              class="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none" />
-            <input type="number" placeholder="Phone No."
-              class="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none" />
+      <div className="space-y-4 mt-8">
+        <input
+          type="text"
+          placeholder="Full Name"
+          className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
+        />
+        <input
+          type="text"
+          placeholder="Street"
+          className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
+        />
+        <input
+          type="number"
+          placeholder="Phone No."
+          className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
+        />
 
-            <input type="email" placeholder="Email"
-              class="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none" />
+        <textarea
+          placeholder="Write Message"
+          className="px-2 pt-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
+        ></textarea>
 
-            <textarea placeholder="Write Message"
-              class="px-2 pt-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"></textarea>
+        <div className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm ">
+          <label>Are you interested in partnering with INFINIA?</label>
+          <div>
+            <input
+              type="radio"
+              id="yes"
+              name="partner"
+              value="yes"
+              className="mr-2"
+              onChange={handlePartnerInterestChange}
+            />
+            <label htmlFor="yes" className="mr-4">Yes</label>
+            <input
+              type="radio"
+              id="no"
+              name="partner"
+              value="no"
+              className="mr-2"
+              onChange={handlePartnerInterestChange}
+            />
+            <label htmlFor="no">No</label>
           </div>
+        </div>
 
-          <button type="button"
-            class="mt-8 flex items-center justify-center text-sm w-full rounded-md px-4 py-2.5 text-gray-800 bg-yellow-600 hover:bg-yellow-600">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='currentColor' class="mr-3"
-              viewBox="0 0 548.244 548.244">
-              <path fill-rule="evenodd"
-                d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
-                clip-rule="evenodd" data-original="#000000" />
-            </svg>
-            Send Message
-          </button>
-        </form>
+        {partnerInterest === 'yes' && (
+          <div className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm ">
+            <label htmlFor="partnerType">Select Type:</label>
+            <select
+              id="partnerType"
+              className="w-full bg-transparent border-none text-gray-200 focus:outline-none"
+            >
+              <option value="dealer">Dealer</option>
+              <option value="distributor">Distributor</option>
+              <option value="businessAssociate">Business Associate</option>
+            </select>
+          </div>
+        )}
+
+        {partnerInterest === 'no' && (
+          <div className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm ">
+            <label htmlFor="productInterest">Which products are you interested in?</label>
+            <select
+              id="productInterest"
+              className="w-full bg-transparent border-none text-gray-200 focus:outline-none"
+            >
+              <option value="product1">Product 1</option>
+              <option value="product2">Product 2</option>
+              <option value="product3">Product 3</option>
+            </select>
+          </div>
+        )}
+
+       
+      </div>
+
+      <button
+        type="button"
+        className="mt-8 flex items-center justify-center text-sm w-full rounded-md px-4 py-2.5 text-gray-800 bg-yellow-600 hover:bg-yellow-600"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16px"
+          height="16px"
+          fill="currentColor"
+          className="mr-3"
+          viewBox="0 0 548.244 548.244"
+        >
+          <path
+            fillRule="evenodd"
+            d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
+            clipRule="evenodd"
+          />
+        </svg>
+        Send Message
+      </button>
+    </form>
       </div>
     </div>
     </div>

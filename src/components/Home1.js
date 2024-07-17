@@ -15,6 +15,7 @@ import image5 from "../../src/assets/img/flyashbrick copy.jpg";
 import image6 from "../../src/assets/img/terracotta-jali-tiles-500x500.jpg";
 import image7 from "../../src/assets/img/1 (1) (1).jpg";
 import image8 from "../../src/assets/img/particle-boards.jpg";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 import { RiArrowDropDownLine } from "react-icons/ri";
 
@@ -91,7 +92,7 @@ const Home1 = () => {
                     <a href="/about">About Us</a>
                   </li>
                   <li className="menu-item-has-children">
-                    <a href="#" className="flex items-center justify-center" onClick={() => showSubMenu("New")}>
+                    <a href="#" className="flex items-center justify-center ssm:flex ssm:justify-start" onClick={() => showSubMenu("New")}>
 
                       Brands <RiArrowDropDownLine className="text-2xl" />
                     </a>
@@ -128,7 +129,7 @@ const Home1 = () => {
                     </div>
                   </li>
                   <li className="menu-item-has-children">
-                    <a href="#"  className="flex items-center justify-center" onClick={() => showSubMenu("Shop")}>
+                    <a href="#"  className="flex items-center justify-center ssm:flex ssm:justify-start" onClick={() => showSubMenu("Shop")}>
                       Products <RiArrowDropDownLine className="text-2xl" />
                     </a>
                     <div
@@ -324,7 +325,7 @@ const Home1 = () => {
             </div>
             <div className="header-item item-right">
               <a href="#" className="menu-icon" onClick={toggleMenu}>
-                <i className="fa fa-bars"></i>
+              <GiHamburgerMenu />
               </a>
             </div>
           </div>

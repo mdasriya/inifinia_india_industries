@@ -9,18 +9,21 @@ import "../slider.css";
 import styled from 'styled-components';
 // import required modules
 import { Navigation, Pagination, Autoplay } from "swiper";
+import Products from './Products';
+import { Link } from 'react-router-dom';
 
 const SubProduct = ({ products }) => {
     const [hoverOn, setHoverOn] = useState(false);
     console.log("Products data : ", products)
+    console.log("Href",Products)
     const setHoverHandler = () => {
         console.log("sethover is called");
         setHoverOn(true);
     }
 
-    const { image, image1, image2, name, point1, point2, point3 } = products;
+    const { image, image1, image2, name, point1, point2, point3,href } = products;
     return (
-        <div>
+        <Link to={href? href:""} >
             <DIV
                 onMouseEnter={() => setHoverHandler()}
                 onMouseLeave={() => setHoverOn(false)}
@@ -32,7 +35,7 @@ const SubProduct = ({ products }) => {
                     // navigation={true}
                     autoplay={true}
                     // pagination={{ clickable: true }}
-                    className="border-2 border-orange-300 hover:cursor-pointer hover:border-accent rounded-[18px] w-full max-w-[285px] h-full max-h-[292px] flex items-center justify-center mb-[15px] relative transition"
+                    className="border-2 border-red-300 hover:cursor-pointer hover:border-accent rounded-[18px] w-full max-w-[285px] h-full max-h-[292px] flex items-center justify-center mb-[15px] relative transition"
                 >
                     <div className=" " >
                         {
@@ -76,7 +79,7 @@ const SubProduct = ({ products }) => {
                     )}
                 </div>
             </DIV>
-        </div>
+        </Link>
     )
 }
 

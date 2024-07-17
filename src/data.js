@@ -177,7 +177,8 @@ export const products = {
           point1: "EM01A RRP Panels -regular Variants - Sizes",
           point2: "EM01B RRP Panels UHD Varient -Size,colours",
           point3: "",
-          count:[1,2]
+          count:[1,2],
+          href: '/DoorFrams'
         },
         {
           image: <Product3Img />,
@@ -236,16 +237,7 @@ export const products = {
           point1: "EM07A",
           count:[]
         },
-        // {
-        //   image: <Product16Img />,
-        //   image1: <Product18Img />,
-        //   icon: <IoMdAddCircle />,
-        //   name: 'EM07 Flyash Bricks/Pavers Pallets',
-        //   point1: "",
-        //   point2: "",
-        //   point3: "",
-        //   count:[1]
-        // },
+     
         {
           image: <Product17Img />,
           image1: <Product18Img />,
@@ -269,110 +261,7 @@ export const products = {
      
       ],
     },
-    // {
-    //   productList: [
-    //     {
-    //       image: <Product1Img />,
-    //       icon: <IoMdAddCircle />,http://localhost:3000/
-    //       name: 'EM01 Boards & Panels',
-    //       point1: "EM01A RRP Panels -regular Variants - Sizes",
-    //       point2: "EM01B RRP Panels UHD Varient -Size,colours",
-    //       point3: ""
-    //     },
-    //     {
-    //       image: <Product2Img />,
-    //       icon: <IoMdAddCircle />,
-    //       name: 'EM02 RRP Doors',
-    //       point1: "EM02A Panel Doors",
-    //       point2: "EM02B Flush Doors",
-    //       point3: ""
-    //     },
-    //     {
-    //       image: <Product3Img />,
-    //       icon: <IoMdAddCircle />,
-    //       name: 'EM03 RRP Door Frames',
-    //       point1: "EM03A 3x2",
-    //       point2: "EM03B 4x2",
-    //       point3: "EM03C 4x2.5"
-    //     },
-    //     {
-    //       image: <Product4Img />,
-    //       icon: <IoMdAddCircle />,
-    //       name: 'EM04 RRP Window Profiles',
-    //       point1: "EM04A 3x2",
-    //       point2: "EM04B 4x2",
-    //       point3: "EM04C Shutter 50x18"
-    //     },
-    //     {
-    //       image: <Product5Img />,
-    //       icon: <IoMdAddCircle />,
-    //       name: 'EM05 RRP Claddings',
-    //       point1: "EM05A Wall Panels",
-    //       point2: "EM05B Partition Walls",
-    //       point3: ""
-    //     },
-    //     {
-    //       image: <Product6Img />,
-    //       icon: <IoMdAddCircle />,
-    //       name: 'EM06 Planks & Battens',
-    //       point1: "EM06A",
-    //       point2: "",
-    //       point3: ""
-    //     },
-    //     {
-    //       image: <Product9Img />,
-    //       icon: <IoMdAddCircle />,
-    //       name: 'EM07 Flyash Bricks/Pavers Pallets',
-    //       point1: "",
-    //       point2: "",
-    //       point3: ""
-    //     },
-    //     {
-    //       image: <Product7Img />,
-    //       icon: <IoMdAddCircle />,
-    //       name: 'EM08 RRP Storage Pallets',
-    //       point1: "EM08A Warehouse storage pallets",
-    //       point2: "EM08B Warehouse storage pallets",
-    //       point3: ""
-    //     },
-    //     {
-    //       image: <Product8Img />,
-    //       icon: <IoMdAddCircle />,
-    //       name: 'EM09 RRP Shuttering Formwork',
-    //       point1: "EM09A Column/Beam Panel",
-    //       point2: "EM09B Slab Panel",
-    //       point3: ""
-    //     }
-    //     // {
-    //     //   image: <Product7Img />,
-    //     //   icon: <IoMdAddCircle />,
-    //     //   name: 'XORA corner desk',
-    //     //   price: 320,
-    //     //   oldPrice: 325,
-    //     // },
-    //     // {
-    //     //   image: <Product8Img />,
-    //     //   icon: <IoMdAddCircle />,
-    //     //   name: 'Black Forest Series Wood',
-    //     //   price: 225,
-    //     //   oldPrice: 240,
-    //     // },
-    //     // {
-    //     //   image: <Product9Img />,
-    //     //   icon: <IoMdAddCircle />,
-    //     //   name: 'Papper Cupboard',
-    //     //   price: 105,
-    //     //   oldPrice: 120,
-    //     // },
-    //     // {
-    //     //   image: <Product10Img />,
-    //     //   icon: <IoMdAddCircle />,
-    //     //   name: 'Ole Gundorse Spring',
-    //     //   price: 75,
-    //     //   oldPrice: 82,
-    //     // },
-    //   ],
-    // },
+  
   ],
 };
 

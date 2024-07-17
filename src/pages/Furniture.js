@@ -41,10 +41,7 @@ More Durable and waterproof .
 Sheets available in many Thicknesses.
           </p>
 
-          {/* <p className="mt-4 text-gray-500">
-            WPC Door frames (Chaukhat) Size:3x2 ,4x2 , 4x2.5, 5x2.5 Colour :Teak
-            wood and Ivory Lenght: 6 ft , 6.5ft , 7ft, 8ft, 10ft and 11 ft
-          </p> */}
+      
 
           <div className="mt-3 flex gap-4" onClick={handleDownload}>
             <a

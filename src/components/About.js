@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import img from "../assets/img/about_1.jpeg";
-import img3 from "../assets/img/9.jpg";
+import img3 from "../assets/img/zero-waste-sign-logo-symbol-zero-waste-conscious-consumption-concept-sustainable-lifestyle-ecological-concept-illustration-in-flat-cartoon-style-vector-removebg-preview.png";
 import climet from "../assets/img/climet.png";
 import super_q from "../assets/img/super_q.png";
 import cost_effective from "../assets/img/cost-removebg-preview.png";
+
 import sus from "../assets/img/sus.png";
 import teracota from "../assets/img/terracotta-jali-500x500.jpg";
 import img4 from "../assets/img/lighting.png";
@@ -320,6 +321,33 @@ function About() {
                         At Infinia Industries, sustainability isn't just a goal;
                         it's a responsibility. Our products actively contribute
                         to preventing deforestation and reducing plastic waste.
+                      </p>
+                    </div>
+                  </motion.down>
+
+
+                  <motion.down
+                    whileInView={{
+                      y: 0,
+                      opacity: 1,
+                    }}
+                    initial={{
+                      y: "100px",
+                      opacity: 0,
+                    }}
+                    transition={{
+                      duration: 1,
+                      delay: 1,
+                    }}
+                    className="down"
+                  >
+                    <div>
+                      <img className="image" src={img3} alt="Zero waste" />
+                    </div>
+                    <div className="subdown">
+                      <h2>Zero waste:</h2>
+                      <p>
+                      Zero waste commitment is at the heart of everything we do. Our processes are optimised to eliminate waste by recycling materials into high quality products.
                       </p>
                     </div>
                   </motion.down>
