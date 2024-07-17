@@ -91,10 +91,12 @@ const Home1 = () => {
                   <li>
                     <a href="/about">About Us</a>
                   </li>
-                  <li className="menu-item-has-children">
-                    <a href="#" className="flex items-center justify-center ssm:flex ssm:justify-start" onClick={() => showSubMenu("New")}>
+                  <li className="menu-item-has-children  ssm:flex">
+                    <a href="#" className="flex items-center justify-center  ssm:justify-start" style={{display:"flex"}} onClick={() => showSubMenu("New")}>
 
                       Brands <RiArrowDropDownLine className="text-2xl" />
+                
+
                     </a>
                     
                     <div
@@ -129,7 +131,7 @@ const Home1 = () => {
                     </div>
                   </li>
                   <li className="menu-item-has-children">
-                    <a href="#"  className="flex items-center justify-center ssm:flex ssm:justify-start" onClick={() => showSubMenu("Shop")}>
+                    <a href="#"  className="flex items-center justify-center  ssm:flex mv:flex ssm:justify-start" style={{display:'flex'}} onClick={() => showSubMenu("Shop")}>
                       Products <RiArrowDropDownLine className="text-2xl" />
                     </a>
                     <div
