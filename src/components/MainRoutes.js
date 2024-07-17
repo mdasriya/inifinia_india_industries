@@ -46,9 +46,9 @@ const MainRoutes = () => {
       <Route path="/skyace" element={<Skyace />} />
       <Route path="/claymagix" element={<Claymagix />} />
       <Route path="/woodmagix" element={<Woodmagix />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/about" element={<About />} />   
       <Route path="/material" element={<Material />} />
-      <Route path="/blogdetails" element={<BlogDetail />} />
+      <Route path="/blogs/:id" element={<BlogDetail />} />
 
 
       <Route path="/contact" element={<ContactUs />} />

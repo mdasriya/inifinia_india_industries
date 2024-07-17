@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Transition from "./Transition";
 import {motion} from "framer-motion"
+import { Link } from "react-router-dom";
 
 
 let BlogsData = [
   {
+    id:1,
     image:
       "https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
     category: "TECHNOLOGY",
@@ -17,6 +19,7 @@ let BlogsData = [
     date: "October 21,2024",
   },
   {
+    id:2,
     image:
       "https://stablo.web3templates.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fcijrdavx%2Fproduction%2F12301f301772ed723724302aef7c70c5c1c0151f-4500x8000.jpg%3Frect%3D0%2C1080%2C4500%2C5330%26w%3D2000%26auto%3Dformat&w=640&q=75",
     category: "TECHNOLOGY",
@@ -28,6 +31,7 @@ let BlogsData = [
     date: "October 21,2024",
   },
   {
+    id:3,
     image:
       "https://stablo.web3templates.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fcijrdavx%2Fproduction%2F2786bf808843b56a0e0feda1c1747cf73673d989-3648x5472.jpg%3Fw%3D2000%26auto%3Dformat&w=640&q=75",
     category: "TECHNOLOGY",
@@ -39,6 +43,7 @@ let BlogsData = [
     date: "October 21,2024",
   },
   {
+    id:4,
     image:
       "https://stablo.web3templates.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fcijrdavx%2Fproduction%2Fb7d2fa6d0b250bd1e0c601645319db4cde42a01e-3958x5937.jpg%3Fw%3D2000%26auto%3Dformat&w=640&q=75",
     category: "TECHNOLOGY",
@@ -112,6 +117,7 @@ const Blog = () => {
       className="grid_outer mt-20 overflow-hidden flex-wrap"
     >
       {currentBlogs.map((item, index) => (
+        <Link key={item.id} to={`/blogs/${item.id}`}>
         <motion.div
           key={index}
           variants={listvariants}
@@ -137,6 +143,7 @@ const Blog = () => {
             </div>
           </div>
         </motion.div>
+          </Link>
       ))}
     </motion.div>
     {/* Pagination */}

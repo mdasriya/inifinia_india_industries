@@ -109,19 +109,19 @@ import "slick-carousel/slick/slick-theme.css";
 import image1 from "../assets/events/01.jpeg";
 import image2 from "../assets/events/02.jpeg";
 import image3 from "../assets/events/03.jpeg";
-import image4 from "../assets/events/04.jpeg"
-import image5 from "../assets/events/05.jpeg"
-import image6 from "../assets/events/06.jpeg"
-import image7 from "../assets/events/07.jpeg"
-import image8 from "../assets/events/08.jpeg"
-import image9 from "../assets/events/09.jpeg"
-import image10 from "../assets/events/10.jpeg"
-import image11 from "../assets/events/11.jpeg"
-import image12 from "../assets/events/12.jpeg"
-import image13 from "../assets/events/13.jpeg"
-import image14 from "../assets/events/14.jpeg"
-import image15 from "../assets/events/15.jpeg"
-import image16 from "../assets/events/16.jpeg"
+import image4 from "../assets/events/04.jpeg";
+import image5 from "../assets/events/05.jpeg";
+import image6 from "../assets/events/06.jpeg";
+import image7 from "../assets/events/07.jpeg";
+import image8 from "../assets/events/08.jpeg";
+import image9 from "../assets/events/09.jpeg";
+import image10 from "../assets/events/10.jpeg";
+import image11 from "../assets/events/11.jpeg";
+import image12 from "../assets/events/12.jpeg";
+import image13 from "../assets/events/13.jpeg";
+import image14 from "../assets/events/14.jpeg";
+import image15 from "../assets/events/15.jpeg";
+import image16 from "../assets/events/16.jpeg";
 
 const customStyles = {
   content: {
@@ -164,7 +164,7 @@ const Image_Event = () => {
     arrows: true,
     autoplay: true,
     autoplaySpeed: 6000,
-    prevArrow: <button className="slick-prev fa-solid fa-arrow-left" style={{color: "black"}} aria-label="Prev"></button>,
+    prevArrow: <button className="slick-prev fa-solid fa-arrow-left" aria-label="Prev"></button>,
     nextArrow: <button className="slick-next fa-solid fa-arrow-right" aria-label="Next"></button>,
     responsive: [
       {
@@ -233,7 +233,7 @@ const Image_Event = () => {
     <DIV>
       <div className="w-full overflow-hidden">
         <div className="property-wrapper mx-auto max-w-[1330px]">
-          <span>Sample Gallery</span>
+     
           <h1>Featured Images</h1>
           <Slider {...settings}>
             {properties.map((property, index) => (
@@ -244,7 +244,6 @@ const Image_Event = () => {
                   </div>
                   <div className="property-details">
                     <strong>{property.title}<br />{property.description}</strong><br />
-                    <span>+ view gallery</span>
                   </div>
                 </a>
               </div>
@@ -290,7 +289,7 @@ a:focus {
 
 .property-wrapper h1 {
   font: 400 40px "Playfair Display", serif;
-  color: #e1ab35;
+  color: #212121;
   text-transform: uppercase;
 }
 
@@ -336,11 +335,12 @@ a:focus {
   transform: translateY(-40px);
   border: none;
   outline: none;
+  background: transparent;  /* Ensure the button background is transparent */
 }
 
 .property-slide button:before {
   font-family: inherit !important;
-  color: #000 !important;
+  color: #000 !important;  /* Change arrow color to black */
   font-size: 30px;
 }
 
@@ -361,7 +361,7 @@ a:focus {
   position: absolute;
   background: rgba(153, 126, 67, 0.3);
   opacity: 0;
-  outline: 1px solid #ffffff;
+  outline: 1px solid black;
   outline-offset: -10px;
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;

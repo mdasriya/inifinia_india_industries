@@ -30,13 +30,13 @@ const [loading, setLoading] =useState(false)
     message: '',
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prevData) => ({
+  //     ...prevData,
+  //     [name]: value,
+  //   }));
+  // };
 
   const handleSubmit = (e) => {
     setLoading(true)
@@ -318,15 +318,15 @@ let url  = "https://sheet.best/api/sheets/26ad79bd-785b-4f4b-bd5a-9ef851575885"
           className="px-2 pt-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
         ></textarea>
 
-        <div className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm ">
+        <div className="px-2 py-3 bg-transparent text-gray-400 font-medium w-full text-sm  ">
           <label>Are you interested in partnering with INFINIA?</label>
-          <div>
+          <div className='mt-10'>
             <input
               type="radio"
               id="yes"
               name="partner"
               value="yes"
-              className="mr-2"
+              className="mr-2 "
               onChange={handlePartnerInterestChange}
             />
             <label htmlFor="yes" className="mr-4">Yes</label>
@@ -343,30 +343,38 @@ let url  = "https://sheet.best/api/sheets/26ad79bd-785b-4f4b-bd5a-9ef851575885"
         </div>
 
         {partnerInterest === 'yes' && (
-          <div className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm ">
-            <label htmlFor="partnerType">Select Type:</label>
+          <>
+          <label htmlFor="partnerType " className='text-sm  text-gray-400'>Select Type:</label>
+          <div className="px-2 py-3  text-gray-200  font-medium w-full text-sm ">
+            
             <select
               id="partnerType"
-              className="w-full bg-transparent border-none text-gray-200 focus:outline-none"
+              className="w-full bg-gray-700 border-none text-gray-200 focus:outline-none p-2"
             >
               <option value="dealer">Dealer</option>
               <option value="distributor">Distributor</option>
               <option value="businessAssociate">Business Associate</option>
             </select>
           </div>
+          </>
         )}
 
         {partnerInterest === 'no' && (
-          <div className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm ">
+          <div className="px-2 py-3 bg-transparent text-gray-400 font-medium w-full text-sm ">
             <label htmlFor="productInterest">Which products are you interested in?</label>
-            <select
+            {/* <select
               id="productInterest"
               className="w-full bg-transparent border-none text-gray-200 focus:outline-none"
             >
               <option value="product1">Product 1</option>
               <option value="product2">Product 2</option>
               <option value="product3">Product 3</option>
-            </select>
+            </select> */}
+            <input
+             id="productInterest"
+             type='text'
+             className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
+        />
           </div>
         )}
 
@@ -376,6 +384,7 @@ let url  = "https://sheet.best/api/sheets/26ad79bd-785b-4f4b-bd5a-9ef851575885"
       <button
         type="button"
         className="mt-8 flex items-center justify-center text-sm w-full rounded-md px-4 py-2.5 text-gray-800 bg-yellow-600 hover:bg-yellow-600"
+        onClick={handleSubmit}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
