@@ -24,29 +24,29 @@ const ImageSlider = () => {
       >
         <SwiperSlide>
           <div className="slider">
-            <img className="w-full lg:-mt-10 lg:h-full object-cover brightness-75" src={image1} alt="" />
+            <img className="w-full lg:-mt-10 lg:h-full  object-cover brightness-75" src={image1} alt="" />
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className="slider">
-            <img className="w-full lg:h-full lg:-mt-5 object-cover brightness-75" src={images2} alt="INFINIA slider1" />
+            <img className="w-full lg:h-full lg:-mt-5 object-cover brightness-75 " src={images2} alt="INFINIA slider1" />
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className="slider">
-            <img className="w-full  lg:h-full object-cover brightness-75" src={images3} alt="INFINIA slider2" />
+            <img className="w-full  lg:h-full object-cover brightness-75 " src={images3} alt="INFINIA slider2" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider">
-            <img className="w-full lg:-mt-5 lg:h-full object-cover brightness-75" src={images4} alt="INFINIA slider3" />
+            <img className="w-full lg:-mt-5 lg:h-full object-cover brightness-75 " src={images4} alt="INFINIA slider3" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider">
-            <img className="w-full lg:h-full object-cover brightness-75" src={images5} alt="INFINIA slider4" />
+            <img className="w-full lg:h-full object-cover brightness-75 " src={images5} alt="INFINIA slider4" />
           </div>
         </SwiperSlide>
       </Swiper>

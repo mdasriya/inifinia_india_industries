@@ -25,6 +25,7 @@ import Skyace from '../pages/Skyace';
 import Material from './Material';
 import BlogDetail from './BlogDetail';
 import Enquiry from './Enquiry';
+import Whatsapp from './Whatsapp';
 const MainRoutes = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -51,9 +52,7 @@ const MainRoutes = () => {
       <Route path="/material" element={<Material />} />
       <Route path="/blogs/:id" element={<BlogDetail />} />
       <Route path="/enquiry" element={<Enquiry />} />
-
-
-
+      {/* <Route path="/whatapp" element={<Whatsapp />} /> */}
       <Route path="/contact" element={<ContactUs />} />
       <Route path="/login" element={<Login />} />
       <Route path="/blogs" element={<Blog />} />

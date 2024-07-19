@@ -4,6 +4,7 @@ import MainRoutes from "./components/MainRoutes";
 import Footer from "./components/Footer";
 import Header2 from "./components/Header2";
 import Home1 from './components/Home1';
+import Whatsapp from './components/Whatsapp';
 // import Home1 from './components/Home1';
 
 // Lazy load the OtherComponent
@@ -36,6 +37,7 @@ const App = () => {
         <Suspense fallback={<div>Loading...</div>}>
           {/* <OtherComponent title="This is the Other Component" /> */}
         </Suspense>
+        <Whatsapp />
         
         <MainRoutes />
         <Footer />
