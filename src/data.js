@@ -57,7 +57,7 @@ export const navigation = [
 export const hero = {
   title: 'Welcome to  Infinia Industries Private Limited',
   subtitle:
-    "Infinia Industries Pvt Ltd  Central India's Premier Manufacturer of Innovative Building Solutions!we take pride in being the forefront of innovation, carving a niche as the leading manufacturer of Wood Polymer Composite Regenerated Plastic  and Terracotta products in Central India",
+    "Infinia Industries Pvt Ltd  Central India's Premier Manufacturer of Innovative Building Solutions!we take pride in being the forefront of innovation, carving a niche as the leading manufacturer of Wood Polymer Composite,Recycle Regenerated Plastic  and Terracotta products in Central India",
   buttonText: 'Shop Now',
 };
 
@@ -178,7 +178,7 @@ export const products = {
           point2: "EM01B RRP Panels UHD Varient -Size,colours",
           point3: "",
           count:[1,2],
-          href: '/DoorFrams'
+          href: '/Boards_panels'
         },
         {
           image: <Product3Img />,
@@ -188,7 +188,8 @@ export const products = {
           point1: "EM02A Panel Doors",
           point2: "EM02B Flush Doors",
           point3: "",
-          count:[1,2]
+          count:[1,2],
+          href: '/DoorFrams'
         },
         {
           image: <Product5Img />,
@@ -198,7 +199,8 @@ export const products = {
           point1: "EM03A 3x2",
           point2: "EM03B 4x2",
           point3: "",
-          count:[1,2,3]
+          count:[1,2,3],
+          href: '/DoorFrams'
         },
         {
           image: <Product8Img />,
@@ -209,7 +211,8 @@ export const products = {
           point1: "EM04A 3x2",
           point2: "EM04B 4x2",
           point3: "EM04C Shutter 50x18",
-          count:[1,2,3]
+          count:[1,2,3],
+          href: '/DoorFrams'
         },
         {
           image: <Product14Img />,
@@ -219,7 +222,8 @@ export const products = {
           name: 'EM05 RRP Claddings',
           point1: "EM05A Wall Panels",
           point2: "EM05B Partition Walls",
-          count:[1,2]
+          count:[1,2],
+          href: '/DoorFrams'
         },
         {
           image: <Product16Img />,
@@ -227,7 +231,8 @@ export const products = {
           icon: <IoMdAddCircle />,
           name: 'EM06 Planks & Battens',
           point1: "EM06A",
-          count:[]
+          count:[],
+
         },
         {
           image: <Product15Img />,
@@ -235,7 +240,8 @@ export const products = {
           icon: <IoMdAddCircle />,
           name: 'EM07 Flyash Bricks/Pavers Pallets',
           point1: "EM07A",
-          count:[]
+          count:[],
+          href: '/Flyash_Brick_pallets'
         },
      
         {
@@ -255,7 +261,8 @@ export const products = {
           name: 'EM09 RRP Shuttering Formwork',
           point1: "EM09A Column/Beam Panel",
           point2: "EM09B Slab Panel",
-          count:[1,2]
+          count:[1,2],
+          href: '/Shuttering_formwork'
         }
       
      

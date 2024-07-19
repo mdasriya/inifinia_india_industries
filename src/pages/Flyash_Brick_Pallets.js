@@ -57,7 +57,7 @@ const Flyash_Brick_Pallets = () => {
             </Link>
           </div>
 
-          <Link
+          {/* <Link
             to="https://www.infiniaindia.in/search.html?ss=Fly-ash+Brick+Pallets"
             target="_blank"
             rel="noopener noreferrer"
@@ -65,7 +65,7 @@ const Flyash_Brick_Pallets = () => {
             <button className="bg-green-500 mb-2 hover:bg-green-600 text-white font-bold px-10 py-2 rounded">
               Buy Now
             </button>
-          </Link>
+          </Link> */}
 
           <dl className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {features.map((feature) => (

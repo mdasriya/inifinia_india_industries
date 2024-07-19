@@ -15,50 +15,53 @@ function classNames(...classes) {
 }
 const handleToast= () => {
   toast.success("Details Add Sucessfully")
-
+  
 };
 
- function ContactUs() {
+function ContactUs() {
   const [agreed, setAgreed] = useState(false)
+  const [loading, setLoading] =useState(false)
 
-const [loading, setLoading] =useState(false)
+
   const [formData, setFormData] = useState({
     fullname:'',
     street:'',
     phoneNumber: '',
     email: '',
     message: '',
+    partnerType:'',
+    productInterest:''
   });
-
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData((prevData) => ({
-  //     ...prevData,
-  //     [name]: value,
-  //   }));
-  // };
+  let scriptURL = "https://docs.google.com/spreadsheets/d/1EOZMdmMSvfrzr7eBxe371tPOF3KQ6LkHYEHFgdSAXwM/edit?gid=0#gid=0"
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
 
   const handleSubmit = (e) => {
     setLoading(true)
     e.preventDefault();
-let url  = "https://sheet.best/api/sheets/26ad79bd-785b-4f4b-bd5a-9ef851575885"
 
- axios.post(url, formData)
- .then((res)=> {
-  handleToast()
-  setLoading(false)
- })
+     axios.post("https://docs.google.com/spreadsheets/d/1EOZMdmMSvfrzr7eBxe371tPOF3KQ6LkHYEHFgdSAXwM/edit?gid=0#gid=0", formData)
+    .then((res)=> {
+     handleToast()
+    setLoading(false)
+    })
  .catch((err)=>{
   console.log(err.message)
   setLoading(false)
  })
     setFormData({
-      firstName: '',
-      lastName: '',
-      company: '',
-      email: '',
+      fullname:'',
+      street:'',
       phoneNumber: '',
+      email: '',
       message: '',
+    partnerType:'',
+    productInterest:''
     });
   };
   const [partnerInterest, setPartnerInterest] = useState(null);
@@ -68,7 +71,20 @@ let url  = "https://sheet.best/api/sheets/26ad79bd-785b-4f4b-bd5a-9ef851575885"
   };
 
  
-
+ const handleSubmit2 = async () => {
+      setLoading(true)
+      try {
+        const response = await fetch(scriptURL, { method: 'POST', body: new FormData(form) });
+        console.log('Success!', response);
+        handleToast();
+        setLoading(false)
+      } catch (error) {
+        console.error('Error!', error.message);
+        setLoading(false)
+      }
+    };
+const form = document.forms['submit-to-google-sheet']
+console.log("formData",formData);
   return (
     // <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8 con-bg">
     //   <div
@@ -286,124 +302,128 @@ let url  = "https://sheet.best/api/sheets/26ad79bd-785b-4f4b-bd5a-9ef851575885"
         </div>
       </div>
 
-      <div class="bg-gray-800 rounded-3xl md:col-span-2 p-8 ">
-        <h2 class="text-2xl text-[#ef9f42] font-semibold mt-[40px]">Product or Service Inquiry</h2>
-        <p class="text-sm text-gray-300 mt-4 leading-relaxed">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project and provide help.</p>
-
-        <form>
-      <div className="space-y-4 mt-8">
-        <input
-          type="text"
-          placeholder="Full Name"
-          className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
-        />
-        <input
-          type="text"
-          placeholder="Street"
-          className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
-        />
-        <input
-          type="number"
-          placeholder="Phone No."
-          className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
-        />
-
-        <textarea
-          placeholder="Write Message"
-          className="px-2 pt-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
-        ></textarea>
-
-        <div className="px-2 py-3 bg-transparent text-gray-400 font-medium w-full text-sm  ">
-          <label>Are you interested in partnering with INFINIA?</label>
-          <div className='mt-10'>
-            <input
-              type="radio"
-              id="yes"
-              name="partner"
-              value="yes"
-              className="mr-2 "
-              onChange={handlePartnerInterestChange}
-            />
-            <label htmlFor="yes" className="mr-4">Yes</label>
-            <input
-              type="radio"
-              id="no"
-              name="partner"
-              value="no"
-              className="mr-2"
-              onChange={handlePartnerInterestChange}
-            />
-            <label htmlFor="no">No</label>
-          </div>
-        </div>
-
-        {partnerInterest === 'yes' && (
-          <>
-          <label htmlFor="partnerType " className='text-sm  text-gray-400'>Select Type:</label>
-          <div className="px-2 py-3  text-gray-200  font-medium w-full text-sm ">
-            
-            <select
-              id="partnerType"
-              className="w-full bg-gray-700 border-none text-gray-200 focus:outline-none p-2"
-            >
-              <option value="dealer">Dealer</option>
-              <option value="distributor">Distributor</option>
-              <option value="businessAssociate">Business Associate</option>
-            </select>
-          </div>
-          </>
-        )}
-
-        {partnerInterest === 'no' && (
-          <div className="px-2 py-3 bg-transparent text-gray-400 font-medium w-full text-sm ">
-            <label htmlFor="productInterest">Which products are you interested in?</label>
-            {/* <select
-              id="productInterest"
-              className="w-full bg-transparent border-none text-gray-200 focus:outline-none"
-            >
-              <option value="product1">Product 1</option>
-              <option value="product2">Product 2</option>
-              <option value="product3">Product 3</option>
-            </select> */}
-            <input
-             id="productInterest"
-             type='text'
-             className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
-        />
-          </div>
-        )}
-
-       
-      </div>
-
-      <button
-        type="button"
-        className="mt-8 flex items-center justify-center text-sm w-full rounded-md px-4 py-2.5 text-gray-800 bg-yellow-600 hover:bg-yellow-600"
-        onClick={handleSubmit}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16px"
-          height="16px"
-          fill="currentColor"
-          className="mr-3"
-          viewBox="0 0 548.244 548.244"
-        >
-          <path
-            fillRule="evenodd"
-            d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
-            clipRule="evenodd"
+      <div className="bg-gray-800 rounded-3xl md:col-span-2 p-8">
+      <h2 className="text-2xl text-[#ef9f42] font-semibold mt-[40px]">Product or Service Inquiry</h2>
+      <p className="text-sm text-gray-300 mt-4 leading-relaxed">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project and provide help.</p>
+      <form >
+        <div className="space-y-4 mt-8">
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Full Name"
+            value={formData.fullname}
+            onChange={handleChange}
+            className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
           />
-        </svg>
-        Send Message
-      </button>
-    </form>
-      </div>
+          <input
+            type="text"
+            name="street"
+            placeholder="Street"
+            value={formData.street}
+            onChange={handleChange}
+            className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
+          />
+          <input
+            type="number"
+            name="phoneNumber"
+            placeholder="Phone No."
+            value={formData.phoneNumber}
+            onChange={handleChange}
+            className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
+          />
+          <textarea
+            name="message"
+            placeholder="Write Message"
+            value={formData.message}
+            onChange={handleChange}
+            className="px-2 pt-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
+          ></textarea>
+          <div className="px-2 py-3 bg-transparent text-gray-400 font-medium w-full text-sm">
+            <label>Are you interested in partnering with INFINIA?</label>
+            <div className="mt-10">
+              <input
+                type="radio"
+                id="yes"
+                name="partner"
+                value="yes"
+                className="mr-2"
+                onChange={handlePartnerInterestChange}
+              />
+              <label htmlFor="yes" className="mr-4">Yes</label>
+              <input
+                type="radio"
+                id="no"
+                name="partner"
+                value="no"
+                className="mr-2"
+                onChange={handlePartnerInterestChange}
+              />
+              <label htmlFor="no">No</label>
+            </div>
+          </div>
+          {partnerInterest === 'yes' && (
+            <>
+              <label htmlFor="partnerType" className="text-sm text-gray-400">Select Type:</label>
+              <div className="px-2 py-3 text-gray-200 font-medium w-full text-sm">
+                <select
+                  id="partnerType"
+                  name="partnerType"
+                  value={formData.partnerType}
+                  onChange={handleChange}
+                  className="w-full bg-gray-700 border-none text-gray-200 focus:outline-none p-2"
+                >
+                  <option value="dealer">Dealer</option>
+                  <option value="distributor">Distributor</option>
+                  <option value="businessAssociate">Business Associate</option>
+                </select>
+              </div>
+            </>
+          )}
+          {partnerInterest === 'no' && (
+            <div className="px-2 py-3 bg-transparent text-gray-400 font-medium w-full text-sm">
+              <label htmlFor="productInterest">Which products are you interested in?</label>
+              <input
+                id="productInterest"
+                name="productInterest"
+                value={formData.productInterest}
+                onChange={handleChange}
+                type="text"
+                className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
+              />
+            </div>
+          )}
+        </div>
+        <button
+          type="submit"
+          onClick={handleSubmit2}
+          className="mt-8 flex items-center justify-center text-sm w-full rounded-md px-4 py-2.5 text-gray-800 bg-yellow-600 hover:bg-yellow-600"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16px"
+            height="16px"
+            fill="currentColor"
+            className="mr-3"
+            viewBox="0 0 548.244 548.244"
+          >
+            <path
+              fillRule="evenodd"
+              d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
+              clipRule="evenodd"
+            />
+          </svg>
+          Send Message
+        </button>
+      </form>
+    </div>
     </div>
     </div>
   )

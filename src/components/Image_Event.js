@@ -194,23 +194,23 @@ const Image_Event = () => {
   const properties = [
     {
       imgSrc: image8,
-      title: "Title Here",
-      description: "Lorem ipsum dolor sit amet"
+      title: "Event",
+      description: "Infinia Industry Event"
     },
     {
       imgSrc: image2,
-      title: "Title Here",
-      description: "Lorem ipsum dolor sit amet"
+      title: "Event",
+      description: "Infinia Industry Event"
     },
     {
       imgSrc: image3,
-      title: "Title Here",
-      description: "Lorem ipsum dolor sit amet"
+      title: "Event",
+      description: "Infinia Industry Event"
     },
     {
       imgSrc: image10,
       title: "Title Here",
-      description: "Lorem ipsum dolor sit amet"
+      description: "Infinia Industry Event"
     },
     {
       imgSrc: image5,
