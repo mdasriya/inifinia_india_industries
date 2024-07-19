@@ -1,169 +1,82 @@
-// EnquiryModal.js
-import React, { useState } from 'react';
-import Modal from 'react-modal';
-import styled from "styled-components";
+import React from 'react';
+import './App.css'; // Import any custom CSS if needed
 
-Modal.setAppElement('#root');
-
-const Enquiry = ({ isOpen, onRequestClose }) => {
-  const [executiveType, setExecutiveType] = useState('Customer');
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [companyName, setCompanyName] = useState('');
-  const [description, setDescription] = useState('');
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission logic
-    console.log({
-      executiveType,
-      name,
-      email,
-      phone,
-      companyName,
-      description
-    });
-    // Reset form fields
-    setExecutiveType('Customer');
-    setName('');
-    setEmail('');
-    setPhone('');
-    setCompanyName('');
-    setDescription('');
-    onRequestClose();
-  };
-
+const DeepChat = () => {
   return (
-     <DIV>
-    <Modal
-      isOpen={isOpen}
-      onRequestClose={onRequestClose}
-      contentLabel="Enquiry Form"
-      className="modal"
-      overlayClassName="overlay"
-    >
-      <h2>ENQUIRY</h2>
-      <p>Provide discussion information and we will get back to you as soon as possible.</p>
-      <form onSubmit={handleSubmit}>
-        <div className="executive-type">
-          <label>
-            <input
-              type="radio"
-              value="Customer"
-              checked={executiveType === 'Customer'}
-              onChange={(e) => setExecutiveType(e.target.value)}
-            />
-            Customer
-          </label>
-          <label>
-            <input
-              type="radio"
-              value="Dealer"
-              checked={executiveType === 'Dealer'}
-              onChange={(e) => setExecutiveType(e.target.value)}
-            />
-            Dealer
-          </label>
-          <label>
-            <input
-              type="radio"
-              value="Distributor"
-              checked={executiveType === 'Distributor'}
-              onChange={(e) => setExecutiveType(e.target.value)}
-            />
-            Distributor
-          </label>
-        </div>
-        <input
-          type="text"
-          placeholder="Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          type="tel"
-          placeholder="Phone"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          required
-        />
-        <input
-          type="text"
-          placeholder="Company Name"
-          value={companyName}
-          onChange={(e) => setCompanyName(e.target.value)}
-        />
-        <textarea
-          placeholder="Describe"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          required
-        />
-        <button type="submit">Submit</button>
-      </form>
-      <p>For Investors Query Please Mail to: <a href="mailto:cs@kakaprofle.com">cs@kakaprofle.com</a> / <a href="mailto:investors@kakaprofle.com">investors@kakaprofle.com</a></p>
-    </Modal>
-    </DIV>
+    <deep-chat
+      style={{ borderRadius: '10px' }}
+      messageStyles='{
+        "default": {
+          "shared": {
+            "bubble": {
+              "maxWidth": "100%", "backgroundColor": "unset", "marginTop": "10px", "marginBottom": "10px"}},
+          "user": {
+            "bubble": {
+              "marginLeft": "0px", "color": "black"}},
+          "ai": {
+            "outerContainer": {
+              "backgroundColor": "rgba(247,247,248)", "borderTop": "1px solid rgba(0,0,0,.1)", "borderBottom": "1px solid rgba(0,0,0,.1)"
+            }
+          }
+        }
+      }'
+      avatars='{
+        "default": {"styles": {"position": "left"}},
+        "ai": {"src": "path-to-icon.png"}
+      }'
+      submitButtonStyles='{
+        "submit": {
+          "container": {
+            "default": {"backgroundColor": "#19c37d"},
+            "hover": {"backgroundColor": "#0bab69"},
+            "click": {"backgroundColor": "#068e56"}
+          },
+          "svg": {
+            "content": "<?xml version=\\"1.0\\" ?> <svg viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\"> <g> <path d=\\"M21.66,12a2,2,0,0,1-1.14,1.81L5.87,20.75A2.08,2.08,0,0,1,5,21a2,2,0,0,1-1.82-2.82L5.46,13H11a1,1,0,0,0,0-2H5.46L3.18,5.87A2,2,0,0,1,5.86,3.25h0l14.65,6.94A2,2,0,0,1,21.66,12Z\\"> </path> </g> </svg>",
+            "styles": {
+              "default": {
+                "width": "1.3em",
+                "marginTop": "0.15em",
+                "filter": "brightness(0) saturate(100%) invert(100%) sepia(28%) saturate(2%) hue-rotate(69deg) brightness(107%) contrast(100%)"
+              }
+            }
+          }
+        },
+        "loading": {
+          "container": {"default": {"backgroundColor": "white"}},
+          "svg": {
+            "styles": {
+              "default": {"filter": "brightness(0) saturate(100%) invert(72%) sepia(0%) saturate(3044%) hue-rotate(322deg) brightness(100%) contrast(96%)"}
+            }
+          }
+        },
+        "stop": {
+          "container": {
+            "default": {"backgroundColor": "white"},
+            "hover": {"backgroundColor": "#dadada52"}
+          },
+          "svg": {
+            "content": "<?xml version=\\"1.0\\" encoding=\\"utf-8\\"?> <svg viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\"> <rect width=\\"24\\" height=\\"24\\" rx=\\"4\\" ry=\\"4\\" /> </svg>",
+            "styles": {
+              "default": {
+                "width": "0.95em",
+                "marginTop": "0.32em",
+                "filter": "brightness(0) saturate(100%) invert(72%) sepia(0%) saturate(3044%) hue-rotate(322deg) brightness(100%) contrast(96%)"}
+            }
+          }
+        }
+      }'
+      textInput='{"placeholder": {"text": "Send a message"}}'
+      history='[
+        {"text": "Hey, how are you?", "role": "user"},
+        {"text": "I am doing great, thanks.", "role": "ai"},
+        {"text": "What is the meaning of life?", "role": "user"},
+        {"text": "Seeking fulfillment and personal growth.", "role": "ai"}
+      ]'
+      demo="true"
+      connect='{"stream": true}'
+    ></deep-chat>
   );
 };
 
-export default Enquiry;
-const DIV = styled.div`
-/* EnquiryModal.css */
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  right: auto;
-  bottom: auto;
-  marginRight: '-50%';
-  transform: translate(-50%, -50%);
-  width: 400px;
-  background: white;
-  padding: 20px;
-  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)';
-  borderRadius: '10px';
-  outline: 'none';
-}
-
-.overlay {
-  position: 'fixed';
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backgroundColor: 'rgba(0, 0, 0, 0.75)';
-}
-
-.executive-type label {
-  margin-right: 10px;
-}
-
-form input, form textarea {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin: 10px 0;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #800000;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #660000;
-}
-
-`
+export default DeepChat;

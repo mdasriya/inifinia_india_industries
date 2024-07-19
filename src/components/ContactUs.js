@@ -393,7 +393,7 @@ useEffect(() => {
               </div>
             </>
           )}
-          {partnerInterest === 'no' && (
+      
             <div className="px-2 py-3 bg-transparent text-gray-400 font-medium w-full text-sm">
               <label htmlFor="productInterest">Which products are you interested in?</label>
               <input
@@ -405,7 +405,6 @@ useEffect(() => {
                 className="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-600 outline-none"
               />
             </div>
-          )}
         </div>
         <button
           type="submit"

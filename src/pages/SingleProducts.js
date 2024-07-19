@@ -220,7 +220,7 @@ function SingleProducts() {
             ))}
           </dl>
         </div>
-        <div className="grid grid-cols-2  grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+        {/* <div className="grid grid-cols-2  grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           <img
             src="http://5.imimg.com/data5/ANDROID/Default/2023/5/310755063/VH/OT/WG/101519832/product-jpeg-1000x1000.jpg"
             alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
@@ -241,7 +241,7 @@ function SingleProducts() {
             alt="Walnut card tray filled with cards and card angled in dedicated groove."
             className="rounded-lg bg-gray-100 shadow img"
           />
-        </div>
+        </div> */}
       </div>
     </div>
 
@@ -294,7 +294,7 @@ function SingleProducts() {
             ))}
           </dl>
         </div>
-        <div className="grid grid-cols-2  grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+        {/* <div className="grid grid-cols-2  grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           <img
             src="http://5.imimg.com/data5/ANDROID/Default/2023/5/310755063/VH/OT/WG/101519832/product-jpeg-1000x1000.jpg"
             alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
@@ -315,7 +315,7 @@ function SingleProducts() {
             alt="Walnut card tray filled with cards and card angled in dedicated groove."
             className="rounded-lg bg-gray-100 shadow img"
           />
-        </div>
+        </div> */}
       </div>
     </div>
     </div>
