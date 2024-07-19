@@ -209,23 +209,23 @@ const Image_Event = () => {
     },
     {
       imgSrc: image10,
-      title: "Title Here",
+      title: "Event",
       description: "Infinia Industry Event"
     },
     {
       imgSrc: image5,
-      title: "Title Here",
-      description: "Lorem ipsum dolor sit amet"
+      title: "Event",
+      description: "Infinia Industry Event"
     },
     {
       imgSrc: image6,
-      title: "Title Here",
-      description: "Lorem ipsum dolor sit amet"
+      title: "Event",
+      description: "Infinia Industry Event"
     },
     {
       imgSrc: image7,
-      title: "Title Here",
-      description: "Lorem ipsum dolor sit amet"
+      title: "Event",
+      description: "Infinia Industry Event"
     }
   ];
 
