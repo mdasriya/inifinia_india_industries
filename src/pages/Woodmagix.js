@@ -3,6 +3,7 @@ import image2 from '../assets/img/cladding.jpg';
 import image3 from '../assets/img/cladding3.jpg';
 import image4 from '../assets/img/9.jpg';
 import Transition from "../components/Transition";
+import { useEffect } from "react";
 
 
 
@@ -76,7 +77,14 @@ const features = [
 
 
 
+
 function Woodmagix() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
+  
   return (
     <div className="bg-white con-bg">
         <div className='flex items-center w-auto text-center door wood'>

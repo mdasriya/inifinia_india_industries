@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
 import 'react-toastify/dist/ReactToastify.css';
@@ -85,6 +85,12 @@ function ContactUs() {
     };
 const form = document.forms['submit-to-google-sheet']
 console.log("formData",formData);
+
+
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   return (
     // <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8 con-bg">
     //   <div
