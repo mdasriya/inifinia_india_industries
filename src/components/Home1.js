@@ -14,7 +14,7 @@ import image4 from "../../src/assets/img/Picture3.jpg";
 import image5 from "../../src/assets/img/flyashbrick copy.jpg";
 import image6 from "../../src/assets/img/terracotta-jali-tiles-500x500.jpg";
 import image7 from "../../src/assets/img/1 (1) (1).jpg";
-import image8 from "../../src/assets/img/particle-boards.jpg";
+import image8 from "../../src/assets/img/Aluminium sliding window and door.jpg";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -173,9 +173,9 @@ const Home1 = () => {
 
 
                       <div className="items-center text-center flex flex-col justify-center">
-                        <h4 className="title mb-[20px]">Boards & Panels</h4>
+                        <h4 className="title mb-[20px]">UPR Sliding Window</h4>
                         <div className="list-item text-center">
-                          <a href="/Boards_panels">
+                          <a href="/UPR_Sliding_Window">
                             <img
                               src={image8}
                               style={{ height: "120px", width: "120px" ,marginTop:'20px' ,borderRadius:'10px'}}

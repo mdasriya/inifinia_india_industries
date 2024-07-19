@@ -60,9 +60,9 @@ const products = [
     icon: SquaresPlusIcon,
   },
   {
-    name: "Boards & Panels",
+    name: "UPR_Sliding_Window",
     description: "Build strategic funnels that will convert",
-    href: "/Boards_panels",
+    href: "/UPR_Sliding_Window",
     icon: ArrowPathIcon,
   },
   {
@@ -459,7 +459,7 @@ const Header = () => {
                       </Menu.Item> */}
                       <Menu.Item>
                         {({ active }) => (
-                          <Link to="/Boards_panels">
+                          <Link to="/UPR_Sliding_Window">
                             <a
                               href="#"
                               className={classNames(
@@ -469,7 +469,7 @@ const Header = () => {
                                 "block px-4 py-2 text-sm"
                               )}
                             >
-                              Boards & Panels
+                              UPR_Sliding_Window
                             </a>
                           </Link>
                         )}

@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import SingleProducts from "../pages/SingleProducts";
 import Flyash_Brick_Pallets from "../pages/Flyash_Brick_Pallets";
-import Boards_Panels from "../pages/Boards_Panels";
+import UPR_Sliding_Window from "../pages/UPR_Sliding_Window";
 import Jails from "../pages/Jails";
 import Furniture from "../pages/Furniture";
 import Shuttering_formwork from "../pages/Shuttering_formwork";
@@ -35,7 +35,7 @@ const MainRoutes = () => {
       <Route path="/" element={<Home />} />
       <Route path="/DoorFrams" element={<SingleProducts />} />
       <Route path="/Flyash_Brick_pallets" element={<Flyash_Brick_Pallets />} />
-      <Route path="/Boards_panels" element={<Boards_Panels />}/>
+      <Route path="/UPR_Sliding_Window" element={<UPR_Sliding_Window />}/>
       <Route path="/Shuttering_formwork" element={<Shuttering_formwork />} />
       <Route
         path="/Roofing_Flooring_Solution"

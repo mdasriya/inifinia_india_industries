@@ -13,7 +13,7 @@ const features = [
     description1: "1.1 WM01A Plain Regular Boards Variants - Colours, Sizes",
     description2: "1.2 WM01B 3Layer Boards Variants - Colours, Sizes",
     description3: "1.3 WM01C 3D Panels  Variants - Colours, Sizes, Designs",
-    href:"/Boards_panels",
+    // href:"/Boards_panels",
     
   },
   {

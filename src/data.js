@@ -102,7 +102,7 @@ export const features = {
   ],
   feature2: {
     image: <Features2Img />,
-    title: 'Recycel plastic sheets WPC Door frames and Particle Boards',
+    title: 'Recycel plastic sheets WPC Door frames ',
     subtitle:
       'We are counted amongst the known manufacturer of Recycel plastic sheets WPC Door frames and Wood Polymer Composite, Recycled Regenerated Plastic and Terracotta Clay Products etc. We offer these products at most affordable prices. always Ready to give services to our all customers.',
   },
@@ -178,7 +178,7 @@ export const products = {
           point2: "EM01B RRP Panels UHD Varient -Size,colours",
           point3: "",
           count:[1,2],
-          href: '/Boards_panels'
+          // href: '/Boards_panels'
         },
         {
           image: <Product3Img />,

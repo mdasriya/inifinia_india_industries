@@ -49,9 +49,9 @@ const products = [
     icon: SquaresPlusIcon,
   },
   {
-    name: "Boards & Panels",
+    name: "UPR_Sliding_Window",
     description: "Build strategic funnels that will convert",
-    href: "/Boards_panels",
+    href: "/UPR_Sliding_Window",
     icon: ArrowPathIcon,
   },
   {
@@ -400,7 +400,7 @@ const Header2 = () => {
                       className={`${
                         location.pathname === "/DoorFrams" ||
                         location.pathname === "/Flyash_Brick_pallets" ||
-                        location.pathname === "/Boards_panels" ||
+                        location.pathname === "/UPR_Sliding_Window" ||
                         location.pathname === "/jails" ||
                         location.pathname === "/furniture" ||
                         location.pathname === "/Shuttering_formwork" ||
@@ -500,7 +500,7 @@ const Header2 = () => {
                       </Menu.Item> */}
                       <Menu.Item>
                         {({ active }) => (
-                          <Link to="/Boards_panels">
+                          <Link to="/UPR_Sliding_Window">
                             <a
                               href="#"
                               className={classNames(

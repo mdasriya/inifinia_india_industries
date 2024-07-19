@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { gsap } from 'gsap/gsap-core'
+import image1 from '../assets/img/Thermal break double glazed aluminum alloy 4 panel sliding glass windows.jpg'
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const products = [
@@ -30,10 +31,10 @@ const products = [
     },
     {
       id: 4,
-      name: 'Boards & Panels',
-      href: 'Boards_panels',
+      name: 'UPR Sliding Window',
+      href: 'UPR_Sliding_Window',
       price: '$35',
-      imageSrc: 'https://5.imimg.com/data5/SELLER/Default/2022/12/OZ/DZ/CD/101519832/pre-laminated-particle-board-500x500.jpeg',
+      imageSrc: image1,
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
     {

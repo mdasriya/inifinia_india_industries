@@ -24,7 +24,7 @@ const AboutInfinia = () => {
         <h2 className="text-3xl font-bold mb-4">About Infinia</h2>
         <p className="text-gray-600">
           Established in the year 2019 we “Infinia Industries Private
-          Limited.” is a Manufacturer of the wide spectrum Particle Boards,
+          Limited.” is a Manufacturer of the wide 
           Chipboard Sheets, Wooden Plywoods etc. 
           <br /> <br />
            We are manufacturing these
