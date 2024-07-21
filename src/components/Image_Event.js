@@ -194,37 +194,37 @@ const Image_Event = () => {
   const properties = [
     {
       imgSrc: image8,
-      title: "Event",
+      title: "Indiawood Bangalore 2024",
       description: "Infinia Industry Event"
     },
     {
       imgSrc: image2,
-      title: "Event",
+      title: "Indiawood Bangalore 2024",
       description: "Infinia Industry Event"
     },
     {
       imgSrc: image3,
-      title: "Event",
+      title: "Indiawood Bangalore 2024",
       description: "Infinia Industry Event"
     },
     {
       imgSrc: image10,
-      title: "Event",
+      title: "Indiawood Bangalore 2024",
       description: "Infinia Industry Event"
     },
     {
       imgSrc: image5,
-      title: "Event",
+      title: "Indiawood Bangalore 2024",
       description: "Infinia Industry Event"
     },
     {
       imgSrc: image6,
-      title: "Event",
+      title: "Indiawood Bangalore 2024",
       description: "Infinia Industry Event"
     },
     {
       imgSrc: image7,
-      title: "Event",
+      title: "Indiawood Bangalore 2024",
       description: "Infinia Industry Event"
     }
   ];
