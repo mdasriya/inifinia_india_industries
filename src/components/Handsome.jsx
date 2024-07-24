@@ -52,7 +52,7 @@ function Handsome() {
           <Link to="/events">
             <ImageContainer>
               <img src={slide_image_1} alt="INFINIA EVENT1" />
-              <OverlayText>Event 1 Description</OverlayText>
+              <OverlayText>Indiawood Bangalore 2024</OverlayText>
             </ImageContainer>
           </Link>
         </SwiperSlide>
@@ -60,7 +60,7 @@ function Handsome() {
           <Link to="/events">
             <ImageContainer>
               <img src={slide_image_2} alt="INFINIA EVENT2" />
-              <OverlayText>Event 2 Description</OverlayText>
+              <OverlayText>Indiawood Bangalore 2024</OverlayText>
             </ImageContainer>
           </Link>
         </SwiperSlide>
@@ -68,7 +68,7 @@ function Handsome() {
           <Link to="/events">
             <ImageContainer>
               <img src={slide_image_3} alt="INFINIA EVENT3" />
-              <OverlayText>Event 3 Description</OverlayText>
+              <OverlayText>Indiawood Bangalore 2024</OverlayText>
             </ImageContainer>
           </Link>
         </SwiperSlide>
@@ -76,26 +76,26 @@ function Handsome() {
           <Link to="/events">
             <ImageContainer>
               <img src={slide_image_4} alt="INFINIA EVENT4" />
-              <OverlayText>Event 4 Description</OverlayText>
+              <OverlayText>Indiawood Bangalore 2024</OverlayText>
             </ImageContainer>
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
             <img src={slide_image_5} alt="INFINIA EVENT5" />
-            <OverlayText>Event 5 Description</OverlayText>
+            <OverlayText>Indiawood Bangalore 2024</OverlayText>
           </ImageContainer>
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
             <img src={slide_image_6} alt="INFINIA EVENT6" />
-            <OverlayText>Event 6 Description</OverlayText>
+            <OverlayText>Indiawood Bangalore 2024</OverlayText>
           </ImageContainer>
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
             <img src={slide_image_7} alt="INFINIA EVENT7" />
-            <OverlayText>Event 7 Description</OverlayText>
+            <OverlayText>Indiawood Bangalore 2024</OverlayText>
           </ImageContainer>
         </SwiperSlide>
 
