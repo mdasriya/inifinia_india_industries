@@ -15,7 +15,7 @@ function Whatsapp() {
         >
           <img
             src={image1}
-            className="w-10 md:w-10 h-auto animate-bounce "
+            className="w-10 md:w-10 h-auto  "
             alt="whatsapp-icon"
             loading="lazy"
           />
