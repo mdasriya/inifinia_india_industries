@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import img from "../assets/img/about_1.jpeg";
+import img from "../assets/img/744 x 484 About us 3.jpg";
 import img3 from "../assets/img/zero-waste-sign-logo-symbol-zero-waste-conscious-consumption-concept-sustainable-lifestyle-ecological-concept-illustration-in-flat-cartoon-style-vector-removebg-preview.png";
 import climet from "../assets/img/every-drop-counts-save-water-save-earth-save-lives-water-conservation-logo-conserve-today-thrive_1174662-315__1_-removebg-preview.png";
 import super_q from "../assets/img/super_q.png";
