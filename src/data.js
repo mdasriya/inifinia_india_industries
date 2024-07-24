@@ -11,13 +11,13 @@ import {
 
 // import images
 import Features1Img from './assets/img/features-1.png';
-import Features2Img from './assets/img/features-2.png';
+import Features2Img from './assets/img/WhatsApp Image 2024-07-23 at 11.55.14_be9eaae7.jpg';
 import ChairImg from './assets/img/TERRACOTTA 1.jpg';
 import BedImg from './assets/img/UPR 1.jpg';
 import CupboardImg from './assets/img/SPF 1.jpg';
 import LightingImg from './assets/img/rrp 1.jpg';
 import Product1Img from './assets/img/products/RRP Board & Panels (1).jpg';
-import Product2Img from './assets/img/products/plain-brown-pvc-panel-1000x1000-removebg-preview.png';
+import Product2Img from './assets/img/WhatsApp Image 2024-07-23 at 11.55.14_be9eaae7.jpg';
 import Product3Img from './assets/img/products/RRP_Door__1_-removebg-preview.png';
 import Product4Img from './assets/img/products/wooden-flush-doors-1000x1000-removebg-preview.png';
 import Product5Img from './assets/img/products/RRP Door Frame (1).jpg';
@@ -26,8 +26,8 @@ import Product6Img from './assets/img/products/wpc-door-frame-250x250-removebg-p
 import Product8Img from './assets/img/products/RRP Window.jpg';
 import Product9Img from './assets/img/products/aluminium-shutter-profile-removebg-preview.png';
 import Product10Img from './assets/img/products/product-10.png'
-import Product14Img from './assets/img/products/RRP Cladding.jpg'
-import Product13Img from './assets/img/products/wall-partition-works-500x500.jpg'
+import Product14Img from './assets/img/WhatsApp Image 2024-07-23 at 11.55.14_351df299.jpg'
+import Product13Img from './assets/img/WhatsApp Image 2024-07-23 at 11.55.14_f1521ff2.jpg'
 import Product16Img from './assets/img/products/RRP Planks & Battens.jpg'
 import Product15Img from './assets/img/products/1. RRP Ecomagix 280 x 286px (1) (1).jpg'
 import Product17Img from './assets/img/products/RRP Storage Pallets.jpg'
@@ -222,7 +222,8 @@ export const products = {
           name: 'EM05 RRP Claddings',
           point1: "EM05A Wall Panels",
           point2: "EM05B Partition Walls",
-          count:[1,2],
+          point3:"CEILING CLADDING",
+          count:[1,2,3],
           href: '/DoorFrams'
         },
         {
